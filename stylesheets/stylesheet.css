@@ -50,7 +50,6 @@ table {
 body {
   font-size: 1em;
   line-height: 1.5; 
-  background: #e7e7e7 url(../images/body-bg.png) 0 0 repeat;
   font-family: 'Helvetica Neue', Helvetica, Arial, serif;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
   color: #6d6d6d;
@@ -69,7 +68,7 @@ header {
 }
 
 header h1 {
-  font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif; font-weight: 900;
+  font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, serif; font-weight: 900;
   letter-spacing: -1px;
   font-size: 48px;
   color: #303030;
@@ -85,7 +84,6 @@ header h2 {
 }
 
 #container {
-  background: transparent url(../images/highlight-bg.jpg) 50% 0 no-repeat;
   min-height: 595px;
 }
 
@@ -200,12 +198,12 @@ ul, ol, dl {
 /* COMMON STYLES */
 
 hr {
+  background: #333;
   height: 1px;
   line-height: 1px;
   margin-top: 1em;
   padding-bottom: 1em;
   border: none;
-  background: transparent url('../images/hr.png') 50% 0 no-repeat;
 }
 
 strong {
@@ -241,11 +239,11 @@ form {
 /* GENERAL ELEMENT TYPE STYLES */
 
 h1 {
-  font-size: 32px;
+  font-size: 38px;
 } 
 
 h2 {
-  font-size: 22px;
+  font-size: 32px;
   font-weight: bold;
   color: #303030;
   margin-bottom: 8px;
@@ -253,24 +251,24 @@ h2 {
 
 h3 {
   color: #d5000d;
-  font-size: 18px;
+  font-size: 28px;
   font-weight: bold;
   margin-bottom: 8px;
 } 
  
 h4 {
-  font-size: 16px;
+  font-size: 24px;
   color: #303030;
   font-weight: bold;
 } 
 
 h5 {
-  font-size: 1em;
+  font-size: 18px;
   color: #303030;
 } 
 
 h6 {
-  font-size: .8em;
+  font-size: 14px;
   color: #303030;
 } 
 
@@ -309,9 +307,7 @@ dl dt {
 }
 
 footer {
-  background: transparent url('../images/hr.png') 0 0 no-repeat;
   margin-top: 40px;
-  padding-top: 20px;
   padding-bottom: 30px;
   font-size: 13px;
   color: #aaa;
@@ -342,7 +338,32 @@ footer a:hover {
 ================================================== */
 
 .post {
+	color: #333;
+	font-family: 'Georgia', georgia, 'Times New Roman', serif;
+	font-size: 22px;
 	list-style-type: none;
+	padding: 0;
+}
+
+.post h2 {
+	font-family: 'Roboto Slab', 'Georgia', georgia, 'Times New Roman', serif;
+}
+
+.post .date {
+	background: url('/images/clock.png') 0 0 no-repeat;
+	font-family: 'Georgia', georgia, 'Times New Roman', serif;
+	font-size: 14px;
+	line-height: 18px;
+	padding: 0 0 0 20px;
+	vertical-align: middle;
+}
+
+.date span {
+	color: #333;
+}
+
+h2 a {
+	color: #333;
 }
 /* #Media Queries
 ================================================== */
