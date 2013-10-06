@@ -48,6 +48,7 @@ table {
 
 /* LAYOUT STYLES */
 body {
+  border-top: 3px solid #000;
   font-size: 1em;
   line-height: 1.5; 
   font-family: 'Helvetica Neue', Helvetica, Arial, serif;
@@ -73,6 +74,12 @@ header h1 {
   font-size: 48px;
   color: #303030;
   line-height: 1.2;
+}
+
+header h1 span {
+  font-family: 'Georgia', georgia, 'Times New Roman', serif;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 header h2 {
