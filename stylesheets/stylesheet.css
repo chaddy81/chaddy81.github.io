@@ -246,10 +246,12 @@ form {
 /* GENERAL ELEMENT TYPE STYLES */
 
 h1 {
+  font-family: 'Roboto Slab', serif;
   font-size: 38px;
 } 
 
 h2 {
+  font-family: 'Roboto Slab', serif;
   font-size: 32px;
   font-weight: bold;
   color: #303030;
@@ -258,12 +260,14 @@ h2 {
 
 h3 {
   color: #d5000d;
+  font-family: 'Roboto Slab', serif;
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 8px;
 } 
  
 h4 {
+  font-family: 'Roboto Slab', serif;
   font-size: 24px;
   color: #303030;
   font-weight: bold;
