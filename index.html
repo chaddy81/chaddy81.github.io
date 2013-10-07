@@ -15,6 +15,7 @@ description: A description about my blog homepage
 			<!-- Case for when no excerpt is defined -->
 			{{ post.content }}
 		{% endif %}
+		<hr />
 		{% if post.date %}
 			<div class="date">
 				<span>Posted on</span> {{ post.date | date_to_string }}{% if post.last_updated %}, last updated on {{ post.last_updated | date_to_string }}{% endif %}
