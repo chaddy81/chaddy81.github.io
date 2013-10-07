@@ -6,13 +6,15 @@ layout: default
 	{% if page.title %}
 		<h2>{{ page.title }}</h2>
 	{% endif %}
+	
 	{{ content }}
+	
+	{% if page.date %}
+		<div class="postdate">
+			Posted on {{ page.date | date_to_string }}{% if page.last_updated %}, last updated on {{ page.last_updated | date_to_string }}{% endif %}
+		</div>
+	{% endif %}
 </div>
 
 <hr />
 
-{% if page.date %}
-	<div class="postdate">
-		Posted on {{ page.date | date_to_string }}{% if page.last_updated %}, last updated on {{ page.last_updated | date_to_string }}{% endif %}
-	</div>
-{% endif %}
