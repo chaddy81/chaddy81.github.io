@@ -79,7 +79,7 @@ header h1 {
 
 header h1 span {
   font-family: 'Georgia', georgia, 'Times New Roman', serif;
-  font-size: .5em;
+  font-size: .4em;
   font-weight: 400;
 }
 
@@ -88,7 +88,7 @@ header h1 a {
 }
 
 header h2 {
-  letter-spacing: -1px;
+  letter-spacing: normal;
   font-size: 24px;
   color: #aaa;
   font-weight: normal;
@@ -372,6 +372,12 @@ footer a:hover {
 	line-height: 18px;
 	padding: 0 0 0 20px;
 	vertical-align: middle;
+}
+
+.postdate {
+	font-family: 'Georgia', georgia, 'Times New Roman', serif;
+	font-size: .87em;
+	font-style: italic;
 }
 
 .date span {
