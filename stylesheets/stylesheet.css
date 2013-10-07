@@ -69,9 +69,10 @@ header {
 }
 
 header h1 {
-  font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, serif; font-weight: 900;
+  font-family: 'Fanwood Text', serif; 
+  font-weight: 400;
   letter-spacing: -1px;
-  font-size: 48px;
+  font-size: 2em;
   color: #303030;
   line-height: 1.2;
 }
