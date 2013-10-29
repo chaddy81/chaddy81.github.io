@@ -2,7 +2,9 @@
 layout: post
 title: "Blogging with Jekyll"
 tags: [Jekyll, Blog]
-description: "using markdown, jekyll, github to blog like a programmer should"
+description: "using markdown, jekyll, and github to blog like a programmer should"
+category: Articles
+comments: true
 ---
 This isn't my first go round with creating a site/blog to both give myself a platform to share as well as a place to display my availability for work.  This is however the first time I'm venturing outside of Wordpress to do so.
 
