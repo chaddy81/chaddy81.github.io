@@ -2,13 +2,12 @@
 <script>window.jQuery || document.write('<script src="{{ site.url }}/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 <script>
   $(function() {
-    $('body').on('click', 'a', function(e) {
+    $('#site-nav').on('click', 'a', function(e) {
       e.preventDefault();
       var navText = $(this).text();
       var newLocation = $(this).attr('href');
 
-      mixpanel.track("Followed Link", {"Link Text": navText, "Page": newLocation});
-      window.location = newLocation;
+      mixpanel.track("Followed Link", {"Link Text": navText, "Page": newLocation}, function() {window.location = newLocation});
     });
   });
 </script>

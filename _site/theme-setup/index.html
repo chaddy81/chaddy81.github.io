@@ -446,13 +446,12 @@ mixpanel.init("55c7c0db68314136dd1ad38d78532532");
 <script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 <script>
   $(function() {
-    $(document).on('click', 'a', function(e) {
+    $('#site-nav').on('click', 'a', function(e) {
       e.preventDefault();
       var navText = $(this).text();
       var newLocation = $(this).attr('href');
 
-      mixpanel.track("Followed Link", {"Link Text": navText, "Page": newLocation});
-      window.location = newLocation;
+      mixpanel.track("Followed Link", {"Link Text": navText, "Page": newLocation}, function() {window.location = newLocation});
     });
   });
 </script>
