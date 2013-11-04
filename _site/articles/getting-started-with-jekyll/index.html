@@ -5,30 +5,30 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>Latest Posts &#8211; </title>
-<meta name="description" content="A simple and clean responsive Jekyll theme for words and photos.">
-<meta name="keywords" content="Jekyll, theme, themes, responsive, blog, minimalism">
+<title>Blogging with Jekyll &#8211; </title>
+<meta name="description" content="using markdown, jekyll, and github to blog like a programmer should">
+<meta name="keywords" content="Jekyll, Blog">
 
 <!-- Twitter Cards -->
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="/images/chad-logo.png">
-<meta name="twitter:title" content="Latest Posts">
-<meta name="twitter:description" content="A simple and clean responsive Jekyll theme for words and photos.">
+<meta name="twitter:title" content="Blogging with Jekyll">
+<meta name="twitter:description" content="using markdown, jekyll, and github to blog like a programmer should">
 <meta name="twitter:creator" content="@chadbartels">
 
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Latest Posts">
-<meta property="og:description" content="A simple and clean responsive Jekyll theme for words and photos.">
-<meta property="og:url" content="/index.html">
+<meta property="og:title" content="Blogging with Jekyll">
+<meta property="og:description" content="using markdown, jekyll, and github to blog like a programmer should">
+<meta property="og:url" content="/articles/getting-started-with-jekyll">
 <meta property="og:site_name" content="">
 
 
 
 
 
-<link rel="canonical" href="/">
+<link rel="canonical" href="/articles/getting-started-with-jekyll">
 <link href="/feed.xml" type="application/atom+xml" rel="alternate" title=" Feed">
 <link rel="author" href="https://plus.google.com/u/1/111798166194713390997/posts?rel=author">
 
@@ -63,7 +63,7 @@
 
 </head>
 
-<body id="page" itemscope itemtype="http://schema.org/WebPage">
+<body id="post" itemscope itemtype="http://schema.org/WebPage">
 
 <div class="navigation-wrapper">
 	<nav role="navigation" id="site-nav" class="animated drop" itemscope itemtype="http://schema.org/SiteNavigationElement">
@@ -112,27 +112,40 @@
 </header><!-- /.masthead -->
 
 
-<div id="main" role="main" itemprop="mainContentOfPage">
-  <article class="entry" itemscope>
+<div id="main" role="main" itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/Blog">
+  <article class="hentry" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="entry-wrapper">
       <header class="entry-header">
-        <h1 class="entry-title" itemprop="name">Latest Posts</h1>
+        <span class="entry-tags"><a href="/tags.html#Jekyll" title="Pages tagged Jekyll" rel="tag">Jekyll</a>&nbsp;&bull;&nbsp;<a href="/tags.html#Blog" title="Pages tagged Blog" rel="tag">Blog</a></span>
+        
+          <h1 class="entry-title" itemprop="headline">Blogging with Jekyll</h1>
+        
       </header>
+      <footer class="entry-meta">
+        <img src="/images/me.jpg" alt="Chad Bartels photo" class="author-photo">
+        <span class="author vcard" itemprop="author" itemscope itemtype="http://schema.org/Person">By <span itemprop="name" class="fn"><a href="/about" title="About Chad Bartels" itemprop="url">Chad Bartels</a></span></span>
+        <span class="entry-date date published"><time datetime="2013-10-28T00:00:00-04:00" itemprop="datePublished"><i class="icon-calendar-empty"></i> October 28, 2013</time></span>
+        
+        
+        <span><a href="/articles/getting-started-with-jekyll" rel="bookmark" title="Blogging with Jekyll" itemprop="url"><i class="icon-link"></i> Permalink</a></span>
+      </footer>
       <div class="entry-content" itemprop="description">
-        <ul class="post-list">
- 
-  <li><article><a href="/articles/my-so-called-startup-life">My So-Called Startup Life <span class="entry-date"><time datetime="2013-10-29T00:00:00-04:00">October 29, 2013</time></span></a></article></li>
- 
-  <li><article><a href="/articles/getting-started-with-jekyll">Blogging with Jekyll <span class="entry-date"><time datetime="2013-10-28T00:00:00-04:00">October 28, 2013</time></span></a></article></li>
+        <p>This isn’t my first go round with creating a site/blog to both give myself a platform to share as well as a place to display my availability for work.  This is however the first time I’m venturing outside of Wordpress to do so.</p>
 
-</ul>
-<nav class="pagination" role="navigation">
-    
-    
-</nav><!-- /.pagination -->
+<p>So far I have been really impressed and enjoy using the tools I already use everyday to create other projects for myself.  Markdown is extremely quick and has a relatively low barrier of entry.  Github takes care of compiling and serving the jekyll framework.  I’d say the most difficult part of getting used to using a tool like Jekyll is getting your local dev setup and configuring everything, and that isn’t too difficult.</p>
+
+<p>If you’d like to give Jekyll a shot or just wanna check out the project, head on over to <a href="http://www.jekyllrb.com">jekyllrb</a> and check it out.</p>
+
+        
       </div><!-- /.entry-content -->
     </div><!-- /.entry-wrapper -->
+    <nav class="pagination" role="navigation">
+      
+      
+        <a href="/articles/my-so-called-startup-life" class="btn" title="My So-Called Startup Life">Next article</a>
+      
+    </nav><!-- /.pagination -->
   </article>
 </div><!-- /#main -->
 
@@ -174,7 +187,7 @@
   })();
 </script>
 
-          
+	        
 
 </body>
 </html>

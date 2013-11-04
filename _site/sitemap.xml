@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>http://localhost:4000</loc>
+        <loc></loc>
     </url>
     
     
     <url>
-        <loc>http://localhost:4000/articles/my-so-called-startup-life</loc>
+        <loc>/articles/my-so-called-startup-life</loc>
+    </url>
+    
+    <url>
+        <loc>/articles/getting-started-with-jekyll</loc>
     </url>
     
 </urlset>

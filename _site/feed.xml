@@ -2,26 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text"></title>
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
-<link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
-<link rel="alternate" type="text/html" href="http://localhost:4000" />
-<updated>2013-10-29T00:11:19-04:00</updated>
-<id>http://localhost:4000/</id>
+<link rel="self" type="application/atom+xml" href="/feed.xml" />
+<link rel="alternate" type="text/html" href="" />
+<updated>2013-11-03T22:05:15-05:00</updated>
+<id>/</id>
 <author>
   <name>Chad Bartels</name>
-  <uri>http://localhost:4000/</uri>
+  <uri>/</uri>
   <email>chad.bartels@gmail.com</email>
 </author>
 
 
 <entry>
   <title type="html"><![CDATA[My So-Called Startup Life]]></title>
-  <link>http://localhost:4000/articles/my-so-called-startup-life</link>
-  <id>http://localhost:4000/articles/my-so-called-startup-life</id>
+  <link>/articles/my-so-called-startup-life</link>
+  <id>/articles/my-so-called-startup-life</id>
   <published>2013-10-29T00:00:00-04:00</published>
   <updated>2013-10-29T00:00:00-04:00</updated>
   <author>
     <name>Chad Bartels</name>
-    <uri>http://localhost:4000</uri>
+    <uri></uri>
     <email>chad.bartels@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;When I started down this road I didn’t really know what to expect.  Would our little business, in this growing market, get enough attention to really prosper?  Would we be able to make an impact on the community in the fashion we had hoped to? So far the answer is sorta.&lt;/p&gt;
@@ -48,7 +48,28 @@
 
 &lt;p&gt;I’ve always prided myself on being a jack of all trades type of developer (PHP, Rails, Javascript, Front-End).  Until recently that has really served me well in my career but now I’m starting to see holes where I’m less equipped to fully contribute to projects where the rest of the developers are specialists in one discipline or another.  My decision to be a full time Rails developer was made a while back but for now, I’m in catch up mode to try and become the best developer I can.&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/my-so-called-startup-life&quot;&gt;My So-Called Startup Life&lt;/a&gt; was originally published by Chad Bartels at &lt;a href=&quot;http://localhost:4000&quot;&gt;&lt;/a&gt; on October 29, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;/articles/my-so-called-startup-life&quot;&gt;My So-Called Startup Life&lt;/a&gt; was originally published by Chad Bartels at &lt;a href=&quot;&quot;&gt;&lt;/a&gt; on October 29, 2013.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Blogging with Jekyll]]></title>
+  <link>/articles/getting-started-with-jekyll</link>
+  <id>/articles/getting-started-with-jekyll</id>
+  <published>2013-10-28T00:00:00-04:00</published>
+  <updated>2013-10-28T00:00:00-04:00</updated>
+  <author>
+    <name>Chad Bartels</name>
+    <uri></uri>
+    <email>chad.bartels@gmail.com</email>
+  </author>
+  <content type="html">&lt;p&gt;This isn’t my first go round with creating a site/blog to both give myself a platform to share as well as a place to display my availability for work.  This is however the first time I’m venturing outside of Wordpress to do so.&lt;/p&gt;
+
+&lt;p&gt;So far I have been really impressed and enjoy using the tools I already use everyday to create other projects for myself.  Markdown is extremely quick and has a relatively low barrier of entry.  Github takes care of compiling and serving the jekyll framework.  I’d say the most difficult part of getting used to using a tool like Jekyll is getting your local dev setup and configuring everything, and that isn’t too difficult.&lt;/p&gt;
+
+&lt;p&gt;If you’d like to give Jekyll a shot or just wanna check out the project, head on over to &lt;a href=&quot;http://www.jekyllrb.com&quot;&gt;jekyllrb&lt;/a&gt; and check it out.&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;/articles/getting-started-with-jekyll&quot;&gt;Blogging with Jekyll&lt;/a&gt; was originally published by Chad Bartels at &lt;a href=&quot;&quot;&gt;&lt;/a&gt; on October 28, 2013.&lt;/p&gt;</content>
 </entry>
 
 </feed>
