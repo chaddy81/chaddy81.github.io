@@ -179,7 +179,7 @@ mixpanel.init("55c7c0db68314136dd1ad38d78532532");
 
 <div class="footer-wrapper">
   <footer role="contentinfo">
-    <span>&copy; 2013 Chad Bartels. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/">So Simple Theme</a>.</span>
+    <span>&copy; 2013 Chad Bartels.</span>
 <div class="social-icons">
 	<a href="http://twitter.com/chadbartels" title="Chad Bartels on Twitter" target="_blank"><i class="icon-twitter icon-2x"></i></a>
 	<a href="http://facebook.com/chadb81" title="Chad Bartels on Facebook" target="_blank"><i class="icon-facebook icon-2x"></i></a>
@@ -198,10 +198,13 @@ mixpanel.init("55c7c0db68314136dd1ad38d78532532");
 <script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 <script>
   $(function() {
-    $('#site-nav').on('click', 'a', function() {
+    $(document).on('click', 'a', function(e) {
+      e.preventDefault();
       var navText = $(this).text();
+      var newLocation = $(this).attr('href');
 
-      mixpanel.track("Followed Link", {"Page": navText});
+      mixpanel.track("Followed Link", {"Link Text": navText, "Page": newLocation});
+      window.location = newLocation;
     });
   });
 </script>
