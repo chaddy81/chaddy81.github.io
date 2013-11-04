@@ -2,7 +2,7 @@
 <script>window.jQuery || document.write('<script src="{{ site.url }}/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 <script>
   $(function() {
-    $(document).on('click', 'a', function(e) {
+    $('body').on('click', 'a', function(e) {
       e.preventDefault();
       var navText = $(this).text();
       var newLocation = $(this).attr('href');
