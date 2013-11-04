@@ -63,7 +63,7 @@ required  ></textarea>
  /></div>
 </li>
 
-<li class="hide" style="visibility: hidden">
+<li class="hide" style="display: none;">
 <label for="comment">Do Not Fill This Out</label>
 <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
 <input type="hidden" id="idstamp" name="idstamp" value="eznjWqau1UHIyGbzoZZDp6PJr9iO7KwRftHchXk9Heo=" />
