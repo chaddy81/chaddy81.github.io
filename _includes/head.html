@@ -1,12 +1,12 @@
 <meta charset="utf-8">
 <title>{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}</title>
-<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-{% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
-
-{% if site.owner.twitter %}<!-- Twitter Cards -->
-{% if page.image.feature %}<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="{{ site.url }}/images/{{ page.image.feature }}">
-{% else %}<meta name="twitter:card" content="summary">
+<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">{% if page.tags %}
+<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %} {% if site.owner.twitter %}
+<!-- Twitter Cards -->
+{% if page.image.feature %}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{{ site.url }}/images/{{ page.image.feature }}">{% else %}
+<meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="{% if page.image.thumb %}{{ site.url }}/images/{{ page.image.thumb }}{% else %}{{ site.url }}/images/{{ site.logo }}{% endif %}">{% endif %}
 <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
 <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
@@ -18,15 +18,12 @@
 <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
 <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-<meta property="og:site_name" content="{{ site.title }}">
-
-{% if site.google_verify %}<meta name="google-site-verification" content="{{ site.google_verify }}">{% endif %}
-{% if site.bing_verify %}<meta name="msvalidate.01" content="{{ site.bing_verify }}">{% endif %}
-
-{% capture canonical %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' | strip_slash }}{% endif %}{% endcapture %}
+<meta property="og:site_name" content="{{ site.title }}">{% if site.google_verify %}
+<meta name="google-site-verification" content="{{ site.google_verify }}">{% endif %} {% if site.bing_verify %}
+<meta name="msvalidate.01" content="{{ site.bing_verify }}">{% endif %} {% capture canonical %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' | strip_slash }}{% endif %}{% endcapture %}
 <link rel="canonical" href="{{ canonical }}">
-<link href="{{ site.url }}/feed.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
-{% if site.owner.google_plus %}<link rel="author" href="{{ site.owner.google_plus }}?rel=author">{% endif %}
+<link href="{{ site.url }}/feed.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">{% if site.owner.google_plus %}
+<link rel="author" href="{{ site.owner.google_plus }}?rel=author">{% endif %}
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
@@ -56,3 +53,49 @@
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ site.url }}/images/apple-touch-icon-114x114-precomposed.png">
 <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.url }}/images/apple-touch-icon-144x144-precomposed.png">
+
+<!-- Mixpanel Integration -->
+<!-- start Mixpanel -->
+<script type="text/javascript">
+(function(e, b) {
+    if (!b.__SV) {
+        var a, f, i, g;
+        window.mixpanel = b;
+        a = e.createElement("script");
+        a.type = "text/javascript";
+        a.async = !0;
+        a.src = ("https:" === e.location.protocol ? "https:" : "http:") + '//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';
+        f = e.getElementsByTagName("script")[0];
+        f.parentNode.insertBefore(a, f);
+        b._i = [];
+        b.init = function(a, e, d) {
+            function f(b, h) {
+                var a = h.split(".");
+                2 == a.length && (b = b[a[0]], h = a[1]);
+                b[h] = function() {
+                    b.push([h].concat(Array.prototype.slice.call(arguments, 0)))
+                }
+            }
+            var c = b;
+            "undefined" !==
+                typeof d ? c = b[d] = [] : d = "mixpanel";
+            c.people = c.people || [];
+            c.toString = function(b) {
+                var a = "mixpanel";
+                "mixpanel" !== d && (a += "." + d);
+                b || (a += " (stub)");
+                return a
+            };
+            c.people.toString = function() {
+                return c.toString(1) + ".people (stub)"
+            };
+            i = "disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
+            for (g = 0; g < i.length; g++) f(c, i[g]);
+            b._i.push([a, e, d])
+        };
+        b.__SV = 1.2
+    }
+})(document, window.mixpanel || []);
+mixpanel.init("55c7c0db68314136dd1ad38d78532532");
+</script>
+<!-- end Mixpanel -->
