@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /contact/index.html
-title: Contact Chad Bartels
+title: Contact Me
 tags: 
 ---
 
