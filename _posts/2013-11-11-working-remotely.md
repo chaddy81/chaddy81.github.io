@@ -12,4 +12,6 @@ Of course, it isn't without its challenges. I now have to try to separate myself
 
 The bigger challenge has yet to come though.  In the coming weeks I'll be relocating my family and I back to Michigan to be closer to family. That means that not only will I be doing my day job from home but I'll now be running my portion of my startup, [URUUT](http://www.uruut.com), from home as well.  My other business partners will still be in Atlanta so we'll be relying even more on tools like hangouts and Skype for communication and keeping the business running.  
 
-While I know it will be difficult and communication will change and adapt, the fear of change is still there.  I'm sure we'll be fine but lack of face time will be something we will have to work through.  Wish me luck...
+While I know it will be difficult and communication will change and adapt, the fear of change is still there.  I'm sure we'll be fine but lack of face time will be something we will have to work through.  
+
+Wish me luck...
