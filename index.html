@@ -9,7 +9,7 @@ tags: [Jekyll, theme, themes, responsive, blog, minimalism]
     {% for post in site.posts limit:5 %}
     <li>
         <article>
-        	<a href="{{ site.url }}{{ post.url }}">
+        	<a href="{{ site.url }}{{ post.url }}" style="border-bottom: 1px dotted #a2a2a2;">
         		{{ post.title }} 
         		<span class="entry-date">
         			<time datetime="{{ post.date | date_to_xmlschema }}">
