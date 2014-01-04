@@ -4,7 +4,7 @@ title: "Working Remotely"
 tags: [Ruby on Rails, Remote Working]
 description: "Running a startup and working a day job, all from home"
 category: articles
-comments: false
+comments: true 
 ---
 I've been working from home again for the last few months and I must admit, it beats the hell out of my 3 1/2 - 4 hour round trip I had previously.  
 

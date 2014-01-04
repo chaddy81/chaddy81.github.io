@@ -1,6 +1,14 @@
 [
 	
 		{
+		  "title"      : "Working Remotely",
+		  "category"   : "articles",
+		  "url"        : "/articles/working-remotely",
+		  "date"       : "2013-11-11 00:00:00 -0500",
+		  "shortdate"  : "November 11, 2013"
+		} ,
+	
+		{
 		  "title"      : "My So-Called Startup Life",
 		  "category"   : "articles",
 		  "url"        : "/articles/my-so-called-startup-life",
