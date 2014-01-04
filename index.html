@@ -1,8 +1,8 @@
 --- 
-layout: page 
-title: Latest Posts 
-description: "A simple and clean responsive Jekyll theme for words and photos." 
-tags: [Jekyll, theme, themes, responsive, blog, minimalism] 
+layout: home 
+title: Freelance Ruby on Rails, Javascript, Front End Developer 
+description: "I am a freelance developer focusing on Ruby on Rails, Javascript and anything Front End" 
+tags: [Ruby on Rails, Javascript, Freelance, Consultant, Front End, html5, css3] 
 ---
 
 <ul class="post-list">
@@ -17,7 +17,7 @@ tags: [Jekyll, theme, themes, responsive, blog, minimalism]
         			</time>
         		</span>
         	</a>
-        	<p>{{ post.excerpt }}</p>
+          <p>{{ post.excerpt }} <a href="{{ site.url }}{{ post.url }}">Continue Reading...</a></p>
         </article>
     </li>
     {% endfor %}

@@ -59,10 +59,16 @@ body {
 		@media @medium {
 			display: block;
 		}
+    ul {
+      margin-bottom: 20px;
+    }
 	}
 	&.opened {
 		display: block;
 		max-height: 100%;
+    ul {
+      margin-bottom: 20px;
+    }
 		li {
 			float: none;
 			@media @medium {
@@ -90,10 +96,10 @@ body {
 // Masthead
 // --------------------------------------------------
 .masthead {
-	margin-top: 40px;
+	margin: 20px 0;
 	.clearfix();
 	@media @medium {
-		margin-top: 0;
+		margin: 20px 0;
 	}
 	.wrap {
 		text-align: center;
@@ -135,6 +141,15 @@ body {
 			.rounded(200px);
 		}
 	}
+}
+.site-name {
+  h2 {
+    color: #000;
+    display: inline-block;
+    font-family: 'volkhov', serif;
+    font-size: 3.5rem;
+    margin: 0 auto;
+  }
 }
 .site-title {
 	margin-bottom: 0;
@@ -330,7 +345,7 @@ span + .entry-title {
 }
 // Post index layout
 .post-list {
-	margin: 0;
+	margin: 20px 0 0;
 	padding: 0;
 	list-style-type: none;
 	li {

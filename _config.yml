@@ -1,5 +1,5 @@
 title:            
-description:      Everyday Musings of a Certified Nerd.
+description:      Freelance Ruby on Rails, Javascript and Front End Developer
 logo:             chad-logo.png
 disqus_shortname: chadbartels 
 search:           false
@@ -17,7 +17,7 @@ owner:
   facebook:       chadb81
   github:         chaddy81
   stackexchange:  
-  linkedin:       
+  linkedin:       chadbartels 
   instagram:      
   flickr:         
   tumblr:         
@@ -39,8 +39,6 @@ links:
     url: /about
   - title: Contact
     url: /contact
-  - title: Articles
-    url: /articles
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/Detroit
