@@ -1,32 +1,37 @@
---- 
-layout: home 
-title: Freelance Ruby on Rails, Javascript, Front End Developer 
-description: "I am a freelance developer focusing on Ruby on Rails, Javascript and anything Front End" 
-tags: [Ruby on Rails, Javascript, Freelance, Consultant, Front End, html5, css3] 
+---
+layout: page
+description: "Full stack Rails and Javascript developer"
 ---
 
-<ul class="post-list">
-    {% for post in site.posts limit:5 %}
-    <li>
-        <article>
-        	<a href="{{ site.url }}{{ post.url }}" style="border-bottom: 1px dotted #a2a2a2;">
-        		{{ post.title }} 
-        		<span class="entry-date">
-        			<time datetime="{{ post.date | date_to_xmlschema }}">
-        				{{ post.date | date: "%B %d, %Y" }}
-        			</time>
-        		</span>
-        	</a>
-          <p>{{ post.excerpt }} <a href="{{ site.url }}{{ post.url }}">Continue Reading...</a></p>
-        </article>
+{% for post in paginator.posts %}
+<div class="post-preview">
+    <a href="{{ post.url | prepend: site.baseurl }}">
+        <h2 class="post-title">
+            {{ post.title }}
+        </h2>
+        {% if post.subtitle %}
+        <h3 class="post-subtitle">
+            {{ post.subtitle }}
+        </h3>
+        {% endif %}
+    </a>
+    <p class="post-meta">Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}</p>
+</div>
+<hr>
+{% endfor %}
+
+<!-- Pager -->
+{% if paginator.total_pages > 1 %}
+<ul class="pager">
+    {% if paginator.previous_page %}
+    <li class="previous">
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
     </li>
-    {% endfor %}
-</ul>
-<nav class="pagination" role="navigation">
-    {% if page.previous %}
-    <a href="{{ site.url }}{{ page.previous.url }}" class="btn" title="{{ page.previous.title }}">Previous article</a>
-    {% endif %} {% if page.next %}
-    <a href="{{ site.url }}{{ page.next.url }}" class="btn" title="{{ page.next.title }}">Next article</a>
     {% endif %}
-</nav>
-<!-- /.pagination -->
+    {% if paginator.next_page %}
+    <li class="next">
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+    </li>
+    {% endif %}
+</ul>
+{% endif %}

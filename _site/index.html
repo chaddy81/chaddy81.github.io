@@ -1,271 +1,209 @@
-<!doctype html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
-<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<meta charset="utf-8">
-<title>Chad Bartels | Freelance Ruby on Rails, Javascript, Front End Developer</title>
-<meta name="description" content="I am a freelance developer focusing on Ruby on Rails, Javascript and anything Front End">
-<meta name="keywords" content="Ruby on Rails, Javascript, Freelance, Consultant, Front End, html5, css3"> 
-<!-- Twitter Cards -->
 
-<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="/images/chad-logo.png">
-<meta name="twitter:title" content="Freelance Ruby on Rails, Javascript, Front End Developer">
-<meta name="twitter:description" content="I am a freelance developer focusing on Ruby on Rails, Javascript and anything Front End">
-<meta name="twitter:creator" content="@chadbartels">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Full stack Rails and Javascript developer">
 
-<!-- Open Graph -->
-<meta property="og:locale" content="en_US">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Freelance Ruby on Rails, Javascript, Front End Developer">
-<meta property="og:description" content="I am a freelance developer focusing on Ruby on Rails, Javascript and anything Front End">
-<meta property="og:url" content="/index.html">
-<meta property="og:site_name" content="">  
-<link rel="canonical" href="/">
-<link href="/feed.xml" type="application/atom+xml" rel="alternate" title=" Feed">
-<link rel="author" href="https://plus.google.com/u/1/111798166194713390997/posts?rel=author">
+    <title>Chad Bartels</title>
 
-<!-- http://t.co/dKP3o1e -->
-<meta name="HandheldFriendly" content="True">
-<meta name="MobileOptimized" content="320">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="chadbartels.com/">
 
-<!-- For all browsers -->
-<link rel="stylesheet" href="/assets/css/main.min.css">
-<!-- Webfonts -->
-<script src="//use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script>
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
 
-<meta http-equiv="cleartype" content="on">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/clean-blog.css">
 
-<!-- Load Modernizr -->
-<script src="/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
 
-<!-- Icons -->
-<!-- 16x16 -->
-<link rel="shortcut icon" href="/favicon.ico">
-<!-- 32x32 -->
-<link rel="shortcut icon" href="/favicon.png">
-<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
-<link rel="apple-touch-icon-precomposed" href="/images/apple-touch-icon-precomposed.png">
-<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/apple-touch-icon-72x72-precomposed.png">
-<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/apple-touch-icon-114x114-precomposed.png">
-<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/apple-touch-icon-144x144-precomposed.png">
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,700,900' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
-<!-- Mixpanel Integration -->
-<!-- start Mixpanel -->
-<script type="text/javascript">
-(function(e, b) {
-    if (!b.__SV) {
-        var a, f, i, g;
-        window.mixpanel = b;
-        a = e.createElement("script");
-        a.type = "text/javascript";
-        a.async = !0;
-        a.src = ("https:" === e.location.protocol ? "https:" : "http:") + '//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';
-        f = e.getElementsByTagName("script")[0];
-        f.parentNode.insertBefore(a, f);
-        b._i = [];
-        b.init = function(a, e, d) {
-            function f(b, h) {
-                var a = h.split(".");
-                2 == a.length && (b = b[a[0]], h = a[1]);
-                b[h] = function() {
-                    b.push([h].concat(Array.prototype.slice.call(arguments, 0)))
-                }
-            }
-            var c = b;
-            "undefined" !==
-                typeof d ? c = b[d] = [] : d = "mixpanel";
-            c.people = c.people || [];
-            c.toString = function(b) {
-                var a = "mixpanel";
-                "mixpanel" !== d && (a += "." + d);
-                b || (a += " (stub)");
-                return a
-            };
-            c.people.toString = function() {
-                return c.toString(1) + ".people (stub)"
-            };
-            i = "disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
-            for (g = 0; g < i.length; g++) f(c, i[g]);
-            b._i.push([a, e, d])
-        };
-        b.__SV = 1.2
-    }
-})(document, window.mixpanel || []);
-mixpanel.init("55c7c0db68314136dd1ad38d78532532");
-</script>
-<!-- end Mixpanel -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
 </head>
 
-<body id="page" itemscope itemtype="http://schema.org/WebPage">
 
-<div class="navigation-wrapper">
-	<nav role="navigation" id="site-nav" class="animated" itemscope itemtype="http://schema.org/SiteNavigationElement">
-	    <ul>
-	        
-			<li>
-				
-					<a href="/">Home</a>
-				 
-			</li>
-	        
-			<li>
-				
-					<a href="/about">About</a>
-				 
-			</li>
-	        
-			<li>
-				
-					<a href="/contact">Contact</a>
-				 
-			</li>
-	        
-	        <li><a href="/feed.xml" title="Atom/RSS feed"><i class="icon-rss"></i> Feed</a></li>
-	        
-	    </ul>
-	</nav>
-</div><!-- /.navigation-wrapper -->
+<body class="">
 
-<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Chad Bartels</a>
+        </div>
 
-
-
-<header class="masthead" itemscope itemtype="http://schema.org/Organization">
-	<div class="wrap">
-    <!-- <a href="" class="site-logo" rel="home" title="" itemprop="url"><img src="/images/chad-logo.png" width="200" height="200" alt=" logo" class="animated fadeInUp" itemprop="logo"></a> -->
-    <a href="/" class="site-name">
-      <h2>Chad Bartels</h2>
-    </a>
-    <!-- <h1 class="site-title animated fadeIn"><a href=""></a></h1> -->
-		<h2 class="site-description animated fadeIn" itemprop="description">Freelance Ruby on Rails, Javascript and Front End Developer</h2>
-	</div>
-</header><!-- /.masthead -->
-
-
-<div id="main" role="main" itemprop="mainContentOfPage">
-  <article class="entry" itemscope>
-    
-    <div class="entry-wrapper">
-      <div class="entry-content" itemprop="description">
-        <ul class="post-list">
-    
-    <li>
-        <article>
-        	<a href="/articles/working-remotely" style="border-bottom: 1px dotted #a2a2a2;">
-        		Working Remotely 
-        		<span class="entry-date">
-        			<time datetime="2013-11-11T00:00:00-05:00">
-        				November 11, 2013
-        			</time>
-        		</span>
-        	</a>
-          <p><p>I’ve been working from home again for the last few months and I must admit, it beats the hell out of my 3 1/2 - 4 hour round trip I had previously.  </p>
-
- <a href="/articles/working-remotely">Continue Reading...</a></p>
-        </article>
-    </li>
-    
-    <li>
-        <article>
-        	<a href="/articles/my-so-called-startup-life" style="border-bottom: 1px dotted #a2a2a2;">
-        		My So-Called Startup Life 
-        		<span class="entry-date">
-        			<time datetime="2013-10-29T00:00:00-04:00">
-        				October 29, 2013
-        			</time>
-        		</span>
-        	</a>
-          <p><p>When I started down this road I didn’t really know what to expect.  Would our little business, in this growing market, get enough attention to really prosper?  Would we be able to make an impact on the community in the fashion we had hoped to? So far the answer is sorta.</p>
-
- <a href="/articles/my-so-called-startup-life">Continue Reading...</a></p>
-        </article>
-    </li>
-    
-    <li>
-        <article>
-        	<a href="/articles/getting-started-with-jekyll" style="border-bottom: 1px dotted #a2a2a2;">
-        		Blogging with Jekyll 
-        		<span class="entry-date">
-        			<time datetime="2013-10-28T00:00:00-04:00">
-        				October 28, 2013
-        			</time>
-        		</span>
-        	</a>
-          <p><p>This isn’t my first go round with creating a site/blog to both give myself a platform to share as well as a place to display my availability for work.  This is however the first time I’m venturing outside of Wordpress to do so.</p>
-
- <a href="/articles/getting-started-with-jekyll">Continue Reading...</a></p>
-        </article>
-    </li>
-    
-</ul>
-<nav class="pagination" role="navigation">
-     
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                
+                <li>
+                    <a href="/about/">About</a>
+                </li>
+                
+                <li>
+                    <a href="/contact/">Contact</a>
+                </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
 </nav>
-<!-- /.pagination -->
-
-      </div><!-- /.entry-content -->
-    </div><!-- /.entry-wrapper -->
-  </article>
-</div><!-- /#main -->
-
-<div class="footer-wrapper">
-  <footer role="contentinfo">
-    <span>&copy; 2014 Chad Bartels.</span>
-<div class="social-icons">
-	<a href="http://twitter.com/chadbartels" title="Chad Bartels on Twitter" target="_blank"><i class="icon-twitter icon-2x"></i></a>
-	<a href="http://facebook.com/chadb81" title="Chad Bartels on Facebook" target="_blank"><i class="icon-facebook icon-2x"></i></a>
-	<a href="https://plus.google.com/u/1/111798166194713390997/posts" title="Chad Bartels on Google+" target="_blank"><i class="icon-google-plus icon-2x"></i></a>
-	<a href="http://linkedin.com/in/chadbartels" title="Chad Bartels on LinkedIn" target="_blank"><i class="icon-linkedin icon-2x"></i></a>
-	
-	
-	
-	<a href="http://github.com/chaddy81" title="Chad Bartels on Github" target="_blank"><i class="icon-github icon-2x"></i></a>
-	
-</div><!-- /.social-icons -->
-  </footer>
-</div><!-- /.footer-wrapper -->
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-<script>
-  $(function() {
-    $('#site-nav').on('click', 'a', function(e) {
-      e.preventDefault();
-      var navText = $(this).text();
-      var newLocation = $(this).attr('href');
-
-      mixpanel.track("Followed Link", {"Link Text": navText, "Page": newLocation}, function() {window.location = newLocation});
-    });
-  });
-</script>
-<script src="/assets/js/scripts.min.js"></script>
 
 
-<!-- Asynchronous Google Analytics snippet -->
-<script>
-  var _gaq = _gaq || [];
-  var pluginUrl = 
- '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
-  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
-  _gaq.push(['_setAccount', 'UA-12629435-1']);
-  _gaq.push(['_trackPageview']);
+    <!-- Page Header -->
+<header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="site-heading">
+                    <h1>Chad Bartels</h1>
+                    <hr class="small">
+                    <span class="subheading">Full stack Rails and Javascript developer</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
+<!-- Main Content -->
+<div class="container">
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+			
+<div class="post-preview">
+    <a href="/articles/2013/11/11/working-remotely/">
+        <h2 class="post-title">
+            Working Remotely
+        </h2>
+        
+        <h3 class="post-subtitle">
+            and struggling to keep my sanity intact
+        </h3>
+        
+    </a>
+    <p class="post-meta">Posted by Chad Bartels on November 11, 2013</p>
+</div>
+<hr>
 
-          
+<div class="post-preview">
+    <a href="/articles/2013/10/29/my-so-called-startup-life/">
+        <h2 class="post-title">
+            My So-Called Startup Life
+        </h2>
+        
+    </a>
+    <p class="post-meta">Posted by Chad Bartels on October 29, 2013</p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/articles/2013/10/28/getting-started-with-jekyll/">
+        <h2 class="post-title">
+            Blogging with Jekyll
+        </h2>
+        
+    </a>
+    <p class="post-meta">Posted by Chad Bartels on October 28, 2013</p>
+</div>
+<hr>
+
+
+<!-- Pager -->
+
+
+		</div>
+	</div>
+</div>
+
+<hr>
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    <li>
+                        <a href="/feed.xml">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://twitter.com/chadbartels">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="https://www.facebook.com/chadb81">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="https://github.com/chaddy81">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <p class="copyright text-muted">Copyright &copy; Chad Bartels 2015</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/clean-blog.min.js "></script>
+
 
 </body>
+
 </html>

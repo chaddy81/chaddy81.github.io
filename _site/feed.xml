@@ -1,55 +1,42 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-<title type="text"></title>
-<generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
-<link rel="self" type="application/atom+xml" href="/feed.xml" />
-<link rel="alternate" type="text/html" href="" />
-<updated>2014-01-04T00:00:01-05:00</updated>
-<id>/</id>
-<author>
-  <name>Chad Bartels</name>
-  <uri>/</uri>
-  <email>chad.bartels@gmail.com</email>
-</author>
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chad Bartels</title>
+    <description>Full stack Rails and Javascript developer</description>
+    <link>chadbartels.com/</link>
+    <atom:link href="chadbartels.com/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Mon, 20 Jul 2015 02:04:31 -0400</pubDate>
+    <lastBuildDate>Mon, 20 Jul 2015 02:04:31 -0400</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Working Remotely</title>
+        <description>&lt;p&gt;I’ve been working from home again for the last few months and I must admit, it beats the hell out of my 3 1/2 - 4 hour round trip I had previously.&lt;/p&gt;
 
+&lt;p&gt;Of course, it isn’t without its challenges. I now have to try to separate myself from my own home distractions like the tv, playstation, taking a nap, etc and make sure I focus on the task at hand.  It’s been a bit of a struggle so far but I found a great &lt;a href=&quot;http://99u.com/book/manage-your-day-to-day-2&quot; title=&quot;Manage Your Day to Day&quot; target=&quot;_blank&quot;&gt;resource&lt;/a&gt; to try and help me figure out my routine.  The book is broken up into small sections similar to the 37signals book, &lt;a href=&quot;http://www.amazon.com/Rework-Jason-Fried/dp/0307463745&quot; title=&quot;Rework&quot; target=&quot;_blank&quot;&gt;Rework&lt;/a&gt;, so it’s very easy to digest.&lt;/p&gt;
 
-<entry>
-  <title type="html"><![CDATA[Working Remotely]]></title>
-  <link>/articles/working-remotely</link>
-  <id>/articles/working-remotely</id>
-  <published>2013-11-11T00:00:00-05:00</published>
-  <updated>2013-11-11T00:00:00-05:00</updated>
-  <author>
-    <name>Chad Bartels</name>
-    <uri></uri>
-    <email>chad.bartels@gmail.com</email>
-  </author>
-  <content type="html">&lt;p&gt;I’ve been working from home again for the last few months and I must admit, it beats the hell out of my 3 1/2 - 4 hour round trip I had previously.  &lt;/p&gt;
+&lt;p&gt;The bigger challenge has yet to come though.  In the coming weeks I’ll be relocating my family and I back to Michigan to be closer to family. That means that not only will I be doing my day job from home but I’ll now be running my portion of my startup, &lt;a href=&quot;http://www.uruut.com&quot; title=&quot;URUUT, A NEW KIND OF CROWDFUNDING PLATFORM&quot; target=&quot;_blank&quot;&gt;URUUT&lt;/a&gt;, from home as well.  My other business partners will still be in Atlanta so we’ll be relying even more on tools like hangouts and Skype for communication and keeping the business running.&lt;/p&gt;
 
-&lt;p&gt;Of course, it isn’t without its challenges. I now have to try to separate myself from my own home distractions like the tv, playstation, taking a nap, etc and make sure I focus on the task at hand.  It’s been a bit of a struggle so far but I found a great &lt;a href=&quot;http://99u.com/book/manage-your-day-to-day-2&quot; title=&quot;Manage Your Day to Day&quot; target=&quot;_blank&quot;&gt;resource&lt;/a&gt; to try and help me figure out my routine.  The book is broken up into small sections similar to the 37signals book, &lt;a href=&quot;http://www.amazon.com/Rework-Jason-Fried/dp/0307463745&quot; title=&quot;Rework&quot; target=&quot;_blank&quot;&gt;Rework&lt;/a&gt;, so it’s very easy to digest. &lt;/p&gt;
-
-&lt;p&gt;The bigger challenge has yet to come though.  In the coming weeks I’ll be relocating my family and I back to Michigan to be closer to family. That means that not only will I be doing my day job from home but I’ll now be running my portion of my startup, &lt;a href=&quot;http://www.uruut.com&quot; title=&quot;URUUT, A NEW KIND OF CROWDFUNDING PLATFORM&quot; target=&quot;_blank&quot;&gt;URUUT&lt;/a&gt;, from home as well.  My other business partners will still be in Atlanta so we’ll be relying even more on tools like hangouts and Skype for communication and keeping the business running.  &lt;/p&gt;
-
-&lt;p&gt;While I know it will be difficult and communication will change and adapt, the fear of change is still there.  I’m sure we’ll be fine but lack of face time will be something we will have to work through.  &lt;/p&gt;
+&lt;p&gt;While I know it will be difficult and communication will change and adapt, the fear of change is still there.  I’m sure we’ll be fine but lack of face time will be something we will have to work through.&lt;/p&gt;
 
 &lt;p&gt;Wish me luck..&lt;/p&gt;
-
-  &lt;p&gt;&lt;a href=&quot;/articles/working-remotely&quot;&gt;Working Remotely&lt;/a&gt; was originally published by Chad Bartels at &lt;a href=&quot;&quot;&gt;&lt;/a&gt; on November 11, 2013.&lt;/p&gt;</content>
-</entry>
-
-
-<entry>
-  <title type="html"><![CDATA[My So-Called Startup Life]]></title>
-  <link>/articles/my-so-called-startup-life</link>
-  <id>/articles/my-so-called-startup-life</id>
-  <published>2013-10-29T00:00:00-04:00</published>
-  <updated>2013-10-29T00:00:00-04:00</updated>
-  <author>
-    <name>Chad Bartels</name>
-    <uri></uri>
-    <email>chad.bartels@gmail.com</email>
-  </author>
-  <content type="html">&lt;p&gt;When I started down this road I didn’t really know what to expect.  Would our little business, in this growing market, get enough attention to really prosper?  Would we be able to make an impact on the community in the fashion we had hoped to? So far the answer is sorta.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 11 Nov 2013 00:00:00 -0500</pubDate>
+        <link>chadbartels.com/articles/2013/11/11/working-remotely/</link>
+        <guid isPermaLink="true">chadbartels.com/articles/2013/11/11/working-remotely/</guid>
+        
+        <category>Ruby on Rails</category>
+        
+        <category>Remote Working</category>
+        
+        
+        <category>articles</category>
+        
+      </item>
+    
+      <item>
+        <title>My So-Called Startup Life</title>
+        <description>&lt;p&gt;When I started down this road I didn’t really know what to expect.  Would our little business, in this growing market, get enough attention to really prosper?  Would we be able to make an impact on the community in the fashion we had hoped to? So far the answer is sorta.&lt;/p&gt;
 
 &lt;p&gt;It’s been more than a year since my business partner, Mark, and I had started a community focused crowdfunding platform called &lt;a href=&quot;http://www.uruut.com&quot; target=&quot;_blank&quot;&gt;URUUT&lt;/a&gt;. When we first started out, I spent my days working as a developer for another company in order to pay the bills and would go home and spend many sleepless nights coding &lt;a href=&quot;http://www.uruut.com&quot; target=&quot;_blank&quot;&gt;URUUT&lt;/a&gt;’s beginnings.  You know what has changed since then?  Not much.  Still working a day job, still coding nights to squash bugs and support the business needs, still looking to expand. Along the way though, I’ve learned a few things about my process and about myself.&lt;/p&gt;
 
@@ -72,29 +59,42 @@
 &lt;/blockquote&gt;
 
 &lt;p&gt;I’ve always prided myself on being a jack of all trades type of developer (PHP, Rails, Javascript, Front-End).  Until recently that has really served me well in my career but now I’m starting to see holes where I’m less equipped to fully contribute to projects where the rest of the developers are specialists in one discipline or another.  My decision to be a full time Rails developer was made a while back but for now, I’m in catch up mode to try and become the best developer I can.&lt;/p&gt;
-
-  &lt;p&gt;&lt;a href=&quot;/articles/my-so-called-startup-life&quot;&gt;My So-Called Startup Life&lt;/a&gt; was originally published by Chad Bartels at &lt;a href=&quot;&quot;&gt;&lt;/a&gt; on October 29, 2013.&lt;/p&gt;</content>
-</entry>
-
-
-<entry>
-  <title type="html"><![CDATA[Blogging with Jekyll]]></title>
-  <link>/articles/getting-started-with-jekyll</link>
-  <id>/articles/getting-started-with-jekyll</id>
-  <published>2013-10-28T00:00:00-04:00</published>
-  <updated>2013-10-28T00:00:00-04:00</updated>
-  <author>
-    <name>Chad Bartels</name>
-    <uri></uri>
-    <email>chad.bartels@gmail.com</email>
-  </author>
-  <content type="html">&lt;p&gt;This isn’t my first go round with creating a site/blog to both give myself a platform to share as well as a place to display my availability for work.  This is however the first time I’m venturing outside of Wordpress to do so.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 29 Oct 2013 00:00:00 -0400</pubDate>
+        <link>chadbartels.com/articles/2013/10/29/my-so-called-startup-life/</link>
+        <guid isPermaLink="true">chadbartels.com/articles/2013/10/29/my-so-called-startup-life/</guid>
+        
+        <category>Startups</category>
+        
+        <category>Ruby on Rails</category>
+        
+        <category>Web Development</category>
+        
+        
+        <category>articles</category>
+        
+      </item>
+    
+      <item>
+        <title>Blogging with Jekyll</title>
+        <description>&lt;p&gt;This isn’t my first go round with creating a site/blog to both give myself a platform to share as well as a place to display my availability for work.  This is however the first time I’m venturing outside of Wordpress to do so.&lt;/p&gt;
 
 &lt;p&gt;So far I have been really impressed and enjoy using the tools I already use everyday to create other projects for myself.  Markdown is extremely quick and has a relatively low barrier of entry.  Github takes care of compiling and serving the jekyll framework.  I’d say the most difficult part of getting used to using a tool like Jekyll is getting your local dev setup and configuring everything, and that isn’t too difficult.&lt;/p&gt;
 
 &lt;p&gt;If you’d like to give Jekyll a shot or just wanna check out the project, head on over to &lt;a href=&quot;http://www.jekyllrb.com&quot;&gt;jekyllrb&lt;/a&gt; and check it out.&lt;/p&gt;
-
-  &lt;p&gt;&lt;a href=&quot;/articles/getting-started-with-jekyll&quot;&gt;Blogging with Jekyll&lt;/a&gt; was originally published by Chad Bartels at &lt;a href=&quot;&quot;&gt;&lt;/a&gt; on October 28, 2013.&lt;/p&gt;</content>
-</entry>
-
-</feed>
+</description>
+        <pubDate>Mon, 28 Oct 2013 00:00:00 -0400</pubDate>
+        <link>chadbartels.com/articles/2013/10/28/getting-started-with-jekyll/</link>
+        <guid isPermaLink="true">chadbartels.com/articles/2013/10/28/getting-started-with-jekyll/</guid>
+        
+        <category>Jekyll</category>
+        
+        <category>Blog</category>
+        
+        
+        <category>articles</category>
+        
+      </item>
+    
+  </channel>
+</rss>

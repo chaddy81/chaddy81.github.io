@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Working Remotely"
+subtitle: "and struggling to keep my sanity intact"
 tags: [Ruby on Rails, Remote Working]
 description: "Running a startup and working a day job, all from home"
 category: articles
