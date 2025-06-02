@@ -4,6 +4,7 @@
 	<meta name="generator" content="Hugo 0.147.2">
     
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,24 +14,111 @@
   @theme {
     --color-clifford: #da373d;
   }
+
+  @layer components {
+    body {
+      @apply text-zinc-800;
+    }
+    p {
+      @apply mt-3 mb-5;
+    }
+    a:hover {
+      @apply text-sky-800;
+    }
+  }
+</style>
+
+<style type="text/css">
+  @font-face {
+    font-family: "FontAwesomeBrands";
+    src:
+      url("/webfonts/fa-brands-400.woff2") format("woff2"),
+      url("/webfonts/fa-brands-400.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: block;
+  }
+  @font-face {
+    font-family: "FontAwesomeRegular";
+    src:
+      url("/webfonts/fa-regular-400.woff2") format("woff2"),
+      url("/webfonts/fa-regular-400.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: block;
+  }
+  @font-face {
+    font-family: "FontAwesomeSolid";
+    src:
+      url("/webfonts/fa-solid-900.woff2") format("woff2"),
+      url("/webfonts/fa-solid-900.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+    font-display: block;
+  }
+  @font-face {
+    font-family: "FontAwesomeV4Compatibility";
+    src:
+      url("/webfonts/fa-v4compatibility.woff2") format("woff2"),
+      url("/webfonts/fa-v4compatibility.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: block;
+  }
 </style>
 
   </head>
-  <body class="flex flex-col items-center-safe font-sans">
-    <div class="container max-w-5xl">
+  <body class="flex flex-col items-center-safe font-sans min-h-dvh">
+    <div class="flex flex-row container max-w-5xl">
       
-<h2 class="text-xl font-bold my-5">Chad Bartels</h2>
-
-      <main>
-<section>
-  <ul>
-    
-    <li class="flex justify-between">
-      <a href="/posts/my-first-post/">My First Post</a>
-      <span>May 5, 2025</span>
+<aside
+  class="sticky top-5 self-start basis-auto grow-0 min-w-[30%] min-h-dvh max-h-dvh content-center justify-items-center"
+>
+  <img src="/images/profile_image.png" alt="Profile" class="w-32 h-32 mx-auto my-3 rounded-full" />
+  <h2 class="text-2xl font-bold mt-3 mb-3"><a href="/">Chad Bartels</a></h2>
+  <ul class="flex flex-row justify-center items-center gap-4 mb-5">
+    <li>
+      <a
+        href="https://www.linkedin.com/in/chadbartels"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex justify-center items-center"
+        ><i class="fa-brands fa-linkedin text-2xl"></i
+      /></a>
     </li>
-    
+    <li>
+      <a href="mailto:chad@chadbartels.com" class="flex justify-center items-center" rel="noopener noreferrer"
+        ><i class="fa-solid fa-envelope text-2xl"></i
+      ></a>
+    </li>
   </ul>
+  <nav class="flex flex-col items-center gap-2">
+    <a href="/" title="Home" aria-label="Home" class="font-medium hover:accent-zinc-400">Home</a>
+    <a href="/about/" title="About Me" aria-label="About Me" class="font-medium hover:accent-zinc-400">About Me</a>
+  </nav>
+</aside>
+
+      <main class="my-5 mx-10 basis-auto grow">
+<section class="mt-10">
+   
+  <div class="border-b border-gray-200 py-2">
+    <h3 class="flex justify-between">
+      <a href="/posts/which-programming-language-should-i-learn/" class="font-bold text-lg">Which programming language should I learn?</a>
+      <span class="text-gray-400 text-sm mt-1">Jun 1, 2025</span>
+    </h3>
+    <p>Do I spend time learning a new programming language or do I focus on mastering the one I already …</p>
+  </div>
+
+    
+  <div class="border-b border-gray-200 py-2">
+    <h3 class="flex justify-between">
+      <a href="/posts/my-second-post/" class="font-bold text-lg">My Second Post</a>
+      <span class="text-gray-400 text-sm mt-1">May 30, 2025</span>
+    </h3>
+    <p>This is the summary of my second post. It provides a brief overview of the content that will be …</p>
+  </div>
+
+   
 </section>
 </main>
        

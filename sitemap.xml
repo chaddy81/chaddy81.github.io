@@ -3,16 +3,44 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://chadbartels.com/</loc>
-    <lastmod>2025-05-05T14:01:37-04:00</lastmod>
+    <lastmod>2025-06-01T11:00:04-04:00</lastmod>
   </url><url>
-    <loc>https://chadbartels.com/posts/my-first-post/</loc>
-    <lastmod>2025-05-05T14:01:37-04:00</lastmod>
+    <loc>https://chadbartels.com/tags/go/</loc>
+    <lastmod>2025-06-01T11:00:04-04:00</lastmod>
+  </url><url>
+    <loc>https://chadbartels.com/tags/languages/</loc>
+    <lastmod>2025-06-01T11:00:04-04:00</lastmod>
+  </url><url>
+    <loc>https://chadbartels.com/tags/learning/</loc>
+    <lastmod>2025-06-01T11:00:04-04:00</lastmod>
   </url><url>
     <loc>https://chadbartels.com/posts/</loc>
+    <lastmod>2025-06-01T11:00:04-04:00</lastmod>
+  </url><url>
+    <loc>https://chadbartels.com/tags/programming/</loc>
+    <lastmod>2025-06-01T11:00:04-04:00</lastmod>
+  </url><url>
+    <loc>https://chadbartels.com/tags/rust/</loc>
+    <lastmod>2025-06-01T11:00:04-04:00</lastmod>
+  </url><url>
+    <loc>https://chadbartels.com/tags/</loc>
+    <lastmod>2025-06-01T11:00:04-04:00</lastmod>
+  </url><url>
+    <loc>https://chadbartels.com/tags/vue/</loc>
+    <lastmod>2025-06-01T11:00:04-04:00</lastmod>
+  </url><url>
+    <loc>https://chadbartels.com/posts/which-programming-language-should-i-learn/</loc>
+    <lastmod>2025-06-01T11:00:04-04:00</lastmod>
+  </url><url>
+    <loc>https://chadbartels.com/tags/zig/</loc>
+    <lastmod>2025-06-01T11:00:04-04:00</lastmod>
+  </url><url>
+    <loc>https://chadbartels.com/posts/my-second-post/</loc>
+    <lastmod>2025-05-30T11:00:04-04:00</lastmod>
+  </url><url>
+    <loc>https://chadbartels.com/about/</loc>
     <lastmod>2025-05-05T14:01:37-04:00</lastmod>
   </url><url>
     <loc>https://chadbartels.com/categories/</loc>
-  </url><url>
-    <loc>https://chadbartels.com/tags/</loc>
   </url>
 </urlset>

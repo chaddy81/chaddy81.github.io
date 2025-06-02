@@ -6,14 +6,28 @@
     <description>Recent content on Chad Bartels</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 05 May 2025 14:01:37 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 01 Jun 2025 11:00:04 -0400</lastBuildDate>
     <atom:link href="https://chadbartels.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My First Post</title>
-      <link>https://chadbartels.com/posts/my-first-post/</link>
+      <title>Which programming language should I learn?</title>
+      <link>https://chadbartels.com/posts/which-programming-language-should-i-learn/</link>
+      <pubDate>Sun, 01 Jun 2025 11:00:04 -0400</pubDate>
+      <guid>https://chadbartels.com/posts/which-programming-language-should-i-learn/</guid>
+      <description>Do I spend time learning a new programming language or do I focus on mastering the one I already know?</description>
+    </item>
+    <item>
+      <title>My Second Post</title>
+      <link>https://chadbartels.com/posts/my-second-post/</link>
+      <pubDate>Fri, 30 May 2025 11:00:04 -0400</pubDate>
+      <guid>https://chadbartels.com/posts/my-second-post/</guid>
+      <description>This is the summary of my second post. It provides a brief overview of the content that will be discussed in this post.</description>
+    </item>
+    <item>
+      <title>About Me</title>
+      <link>https://chadbartels.com/about/</link>
       <pubDate>Mon, 05 May 2025 14:01:37 -0400</pubDate>
-      <guid>https://chadbartels.com/posts/my-first-post/</guid>
-      <description></description>
+      <guid>https://chadbartels.com/about/</guid>
+      <description>&lt;p&gt;Welcome to my site! This is a placeholder for the About Me page. Here you can share information about yourself, your background, interests, and anything else you&amp;rsquo;d like visitors to know.&lt;/p&gt;&#xA;&lt;p&gt;Feel free to update this page with your own story!&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

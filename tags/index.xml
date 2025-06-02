@@ -6,6 +6,56 @@
     <description>Recent content in Tags on Chad Bartels</description>
     <generator>Hugo</generator>
     <language>en-us</language>
+    <lastBuildDate>Sun, 01 Jun 2025 11:00:04 -0400</lastBuildDate>
     <atom:link href="https://chadbartels.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Go</title>
+      <link>https://chadbartels.com/tags/go/</link>
+      <pubDate>Sun, 01 Jun 2025 11:00:04 -0400</pubDate>
+      <guid>https://chadbartels.com/tags/go/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Languages</title>
+      <link>https://chadbartels.com/tags/languages/</link>
+      <pubDate>Sun, 01 Jun 2025 11:00:04 -0400</pubDate>
+      <guid>https://chadbartels.com/tags/languages/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Learning</title>
+      <link>https://chadbartels.com/tags/learning/</link>
+      <pubDate>Sun, 01 Jun 2025 11:00:04 -0400</pubDate>
+      <guid>https://chadbartels.com/tags/learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Programming</title>
+      <link>https://chadbartels.com/tags/programming/</link>
+      <pubDate>Sun, 01 Jun 2025 11:00:04 -0400</pubDate>
+      <guid>https://chadbartels.com/tags/programming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rust</title>
+      <link>https://chadbartels.com/tags/rust/</link>
+      <pubDate>Sun, 01 Jun 2025 11:00:04 -0400</pubDate>
+      <guid>https://chadbartels.com/tags/rust/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vue</title>
+      <link>https://chadbartels.com/tags/vue/</link>
+      <pubDate>Sun, 01 Jun 2025 11:00:04 -0400</pubDate>
+      <guid>https://chadbartels.com/tags/vue/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Zig</title>
+      <link>https://chadbartels.com/tags/zig/</link>
+      <pubDate>Sun, 01 Jun 2025 11:00:04 -0400</pubDate>
+      <guid>https://chadbartels.com/tags/zig/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

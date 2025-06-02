@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Chad Bartels</title>
-    <link>https://chadbartels.com/posts/</link>
-    <description>Recent content in Posts on Chad Bartels</description>
+    <title>Rust on Chad Bartels</title>
+    <link>https://chadbartels.com/tags/rust/</link>
+    <description>Recent content in Rust on Chad Bartels</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 01 Jun 2025 11:00:04 -0400</lastBuildDate>
-    <atom:link href="https://chadbartels.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://chadbartels.com/tags/rust/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Which programming language should I learn?</title>
       <link>https://chadbartels.com/posts/which-programming-language-should-i-learn/</link>
       <pubDate>Sun, 01 Jun 2025 11:00:04 -0400</pubDate>
       <guid>https://chadbartels.com/posts/which-programming-language-should-i-learn/</guid>
       <description>Do I spend time learning a new programming language or do I focus on mastering the one I already know?</description>
-    </item>
-    <item>
-      <title>My Second Post</title>
-      <link>https://chadbartels.com/posts/my-second-post/</link>
-      <pubDate>Fri, 30 May 2025 11:00:04 -0400</pubDate>
-      <guid>https://chadbartels.com/posts/my-second-post/</guid>
-      <description>This is the summary of my second post. It provides a brief overview of the content that will be discussed in this post.</description>
     </item>
   </channel>
 </rss>
