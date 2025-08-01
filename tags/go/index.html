@@ -21,8 +21,22 @@
     p {
       @apply mt-3 mb-5;
     }
+    main p a {
+      @apply text-sky-600;
+    }
+    main header a {
+      @apply text-zinc-800;
+    }
     a:hover {
       @apply text-sky-800;
+    }
+    h2 {
+      @apply text-2xl;
+      @apply my-5;
+    }
+    h3 {
+      @apply text-xl;
+      @apply my-4;
     }
   }
 </style>
@@ -37,6 +51,7 @@
     font-style: normal;
     font-display: block;
   }
+
   @font-face {
     font-family: "FontAwesomeRegular";
     src:
@@ -46,6 +61,7 @@
     font-style: normal;
     font-display: block;
   }
+
   @font-face {
     font-family: "FontAwesomeSolid";
     src:
@@ -55,6 +71,7 @@
     font-style: normal;
     font-display: block;
   }
+
   @font-face {
     font-family: "FontAwesomeV4Compatibility";
     src:
@@ -63,6 +80,26 @@
     font-weight: 400;
     font-style: normal;
     font-display: block;
+  }
+
+  ul {
+    margin-bottom: 20px;
+    margin-left: 15px;
+  }
+
+  ul li {
+    list-style-type: initial;
+    line-height: 1.5;
+    margin: 8px 0;
+  }
+
+  aside ul {
+    margin-bottom: 10px;
+    margin-left: 0;
+  }
+
+  aside ul li {
+    list-style-type: none;
   }
 </style>
 

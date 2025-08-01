@@ -2,8 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://chadbartels.com/tags/ai/</loc>
+    <lastmod>2025-08-01T10:00:00-04:00</lastmod>
+  </url><url>
     <loc>https://chadbartels.com/</loc>
-    <lastmod>2025-06-01T11:00:04-04:00</lastmod>
+    <lastmod>2025-08-01T10:00:00-04:00</lastmod>
+  </url><url>
+    <loc>https://chadbartels.com/tags/chatgpt/</loc>
+    <lastmod>2025-08-01T10:00:00-04:00</lastmod>
+  </url><url>
+    <loc>https://chadbartels.com/tags/claude-code/</loc>
+    <lastmod>2025-08-01T10:00:00-04:00</lastmod>
+  </url><url>
+    <loc>https://chadbartels.com/posts/claude-code-best-practices/</loc>
+    <lastmod>2025-08-01T10:00:00-04:00</lastmod>
+  </url><url>
+    <loc>https://chadbartels.com/tags/openai/</loc>
+    <lastmod>2025-08-01T10:00:00-04:00</lastmod>
+  </url><url>
+    <loc>https://chadbartels.com/posts/</loc>
+    <lastmod>2025-08-01T10:00:00-04:00</lastmod>
+  </url><url>
+    <loc>https://chadbartels.com/tags/productivity/</loc>
+    <lastmod>2025-08-01T10:00:00-04:00</lastmod>
+  </url><url>
+    <loc>https://chadbartels.com/tags/programming/</loc>
+    <lastmod>2025-08-01T10:00:00-04:00</lastmod>
+  </url><url>
+    <loc>https://chadbartels.com/tags/</loc>
+    <lastmod>2025-08-01T10:00:00-04:00</lastmod>
+  </url><url>
+    <loc>https://chadbartels.com/tags/terminal/</loc>
+    <lastmod>2025-08-01T10:00:00-04:00</lastmod>
   </url><url>
     <loc>https://chadbartels.com/tags/go/</loc>
     <lastmod>2025-06-01T11:00:04-04:00</lastmod>
@@ -14,16 +44,7 @@
     <loc>https://chadbartels.com/tags/learning/</loc>
     <lastmod>2025-06-01T11:00:04-04:00</lastmod>
   </url><url>
-    <loc>https://chadbartels.com/posts/</loc>
-    <lastmod>2025-06-01T11:00:04-04:00</lastmod>
-  </url><url>
-    <loc>https://chadbartels.com/tags/programming/</loc>
-    <lastmod>2025-06-01T11:00:04-04:00</lastmod>
-  </url><url>
     <loc>https://chadbartels.com/tags/rust/</loc>
-    <lastmod>2025-06-01T11:00:04-04:00</lastmod>
-  </url><url>
-    <loc>https://chadbartels.com/tags/</loc>
     <lastmod>2025-06-01T11:00:04-04:00</lastmod>
   </url><url>
     <loc>https://chadbartels.com/tags/vue/</loc>

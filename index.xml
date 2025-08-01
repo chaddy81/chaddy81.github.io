@@ -6,8 +6,15 @@
     <description>Recent content on Chad Bartels</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Jun 2025 11:00:04 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 01 Aug 2025 10:00:00 -0400</lastBuildDate>
     <atom:link href="https://chadbartels.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Claude Code So Far</title>
+      <link>https://chadbartels.com/posts/claude-code-best-practices/</link>
+      <pubDate>Fri, 01 Aug 2025 10:00:00 -0400</pubDate>
+      <guid>https://chadbartels.com/posts/claude-code-best-practices/</guid>
+      <description>Claude Code is basically Claude, but living in your terminal. No more alt-tabbing between your IDE and a browser window, copying and pasting code back and forth like some kind of digital archaeologist. You just type, Claude responds, and you keep coding. It&amp;rsquo;s surprisingly natural once you get the hang of it. If you&amp;rsquo;re curious about the nitty-gritty setup details, check out &lt;a href=&#34;https://docs.anthropic.com/en/docs/claude-code&#34;&gt;https://docs.anthropic.com/en/docs/claude-code&lt;/a&gt;. But honestly, getting started was easier than I expected.</description>
+    </item>
     <item>
       <title>Which programming language should I learn?</title>
       <link>https://chadbartels.com/posts/which-programming-language-should-i-learn/</link>

@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Claude Code So Far</title>
+    
+<style type="text/tailwindcss">
+  @theme {
+    --color-clifford: #da373d;
+  }
+
+  @layer components {
+    body {
+      @apply text-zinc-800;
+    }
+    p {
+      @apply mt-3 mb-5;
+    }
+    main p a {
+      @apply text-sky-600;
+    }
+    main header a {
+      @apply text-zinc-800;
+    }
+    a:hover {
+      @apply text-sky-800;
+    }
+    h2 {
+      @apply text-2xl;
+      @apply my-5;
+    }
+    h3 {
+      @apply text-xl;
+      @apply my-4;
+    }
+  }
+</style>
+
+<style type="text/css">
+  @font-face {
+    font-family: "FontAwesomeBrands";
+    src:
+      url("/webfonts/fa-brands-400.woff2") format("woff2"),
+      url("/webfonts/fa-brands-400.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: block;
+  }
+
+  @font-face {
+    font-family: "FontAwesomeRegular";
+    src:
+      url("/webfonts/fa-regular-400.woff2") format("woff2"),
+      url("/webfonts/fa-regular-400.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: block;
+  }
+
+  @font-face {
+    font-family: "FontAwesomeSolid";
+    src:
+      url("/webfonts/fa-solid-900.woff2") format("woff2"),
+      url("/webfonts/fa-solid-900.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+    font-display: block;
+  }
+
+  @font-face {
+    font-family: "FontAwesomeV4Compatibility";
+    src:
+      url("/webfonts/fa-v4compatibility.woff2") format("woff2"),
+      url("/webfonts/fa-v4compatibility.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: block;
+  }
+
+  ul {
+    margin-bottom: 20px;
+    margin-left: 15px;
+  }
+
+  ul li {
+    list-style-type: initial;
+    line-height: 1.5;
+    margin: 8px 0;
+  }
+
+  aside ul {
+    margin-bottom: 10px;
+    margin-left: 0;
+  }
+
+  aside ul li {
+    list-style-type: none;
+  }
+</style>
+
+  </head>
+  <body class="flex flex-col items-center-safe font-sans min-h-dvh">
+    <div class="flex flex-row container max-w-5xl">
+      
+<aside
+  class="sticky top-5 self-start basis-auto grow-0 min-w-[30%] min-h-dvh max-h-dvh content-center justify-items-center"
+>
+  <img src="/images/profile_image.png" alt="Profile" class="w-32 h-32 mx-auto my-3 rounded-full" />
+  <h2 class="text-2xl font-bold mt-3 mb-3"><a href="/">Chad Bartels</a></h2>
+  <ul class="flex flex-row justify-center items-center gap-4 mb-5">
+    <li>
+      <a
+        href="https://www.linkedin.com/in/chadbartels"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex justify-center items-center"
+        ><i class="fa-brands fa-linkedin text-2xl"></i
+      /></a>
+    </li>
+    <li>
+      <a href="mailto:chad@chadbartels.com" class="flex justify-center items-center" rel="noopener noreferrer"
+        ><i class="fa-solid fa-envelope text-2xl"></i
+      ></a>
+    </li>
+  </ul>
+  <nav class="flex flex-col items-center gap-2">
+    <a href="/" title="Home" aria-label="Home" class="font-medium hover:accent-zinc-400">Home</a>
+    <a href="/about/" title="About Me" aria-label="About Me" class="font-medium hover:accent-zinc-400">About Me</a>
+  </nav>
+</aside>
+
+      <main class="my-5 mx-10 basis-auto grow">
+<article>
+  <header class="mt-10 py-2">
+    <h3 class="flex justify-between">
+      <a href="/posts/claude-code-best-practices/" class="font-bold text-lg">Claude Code So Far</a>
+      <span class="text-gray-400 text-sm mt-1">Aug 1, 2025</span>
+    </h3>
+    
+      <div class="mt-2 flex flex-wrap gap-2">
+        
+          <a href="/tags/programming/" class="inline-block bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-200">#programming</a>
+        
+          <a href="/tags/ai/" class="inline-block bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-200">#AI</a>
+        
+          <a href="/tags/claude-code/" class="inline-block bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-200">#Claude Code</a>
+        
+          <a href="/tags/terminal/" class="inline-block bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-200">#terminal</a>
+        
+          <a href="/tags/productivity/" class="inline-block bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-200">#productivity</a>
+        
+          <a href="/tags/chatgpt/" class="inline-block bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-200">#ChatGPT</a>
+        
+          <a href="/tags/openai/" class="inline-block bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-200">#OpenAI</a>
+        
+      </div>
+    
+  </header>
+  <section><p>I&rsquo;ll admit it - when I first heard about Claude Code, I was skeptical. I was just dipping my toe into AI and agentic workflows. My only exposure prior to this was ChatGPT in the browser. I decided to give Claude Code a shot because everything I read was positive and the CLI kept me in the terminal as I&rsquo;m a NeoVim user. That was a couple of months ago, and now I can&rsquo;t imagine my workflow without it.</p>
+<p><img src="/images/claude-code.png" alt="Claude Code"></p>
+<h2 id="so-whats-this-claude-code-thing">So What&rsquo;s This Claude Code Thing?</h2>
+<p>Claude Code is basically Claude, but living in your terminal. No more alt-tabbing between your IDE and a browser window, copying and pasting code back and forth like some kind of digital archaeologist. You just type, Claude responds, and you keep coding. It&rsquo;s surprisingly natural once you get the hang of it.</p>
+<p>If you&rsquo;re curious about the nitty-gritty setup details, check out <a href="https://docs.anthropic.com/en/docs/claude-code">https://docs.anthropic.com/en/docs/claude-code</a>. But honestly, getting started was easier than I expected.</p>
+<h2 id="lessons-learned-sometimes-the-hard-way">Lessons Learned (Sometimes the Hard Way)</h2>
+<h3 id="context-is-everything">Context is Everything</h3>
+<p>Early on, I made the mistake of being too vague. I&rsquo;d throw something like &ldquo;fix this function&rdquo; at Claude and wonder why the results were hit-or-miss. Now I&rsquo;ve learned to paint the full picture:</p>
+<ul>
+<li>What language/framework I&rsquo;m using (even if it seems obvious)</li>
+<li>What the code is supposed to do</li>
+<li>What&rsquo;s currently broken</li>
+<li>Any weird constraints or legacy decisions I&rsquo;m stuck with</li>
+</ul>
+<p>The difference is night and day.</p>
+<h3 id="baby-steps-beat-giant-leaps">Baby Steps Beat Giant Leaps</h3>
+<p>My first instinct was to ask Claude to build entire features. Bad idea. What works way better is building incrementally with workflows like spec driven development, which allows you to spend time writing more about what you&rsquo;re trying to accomplish and how vs. trying to go prompt by prompt. I like this better than the iterative approach I was using. Before, I may get to a point where I&rsquo;d let it run without training wheels and have to start over multiple times. My fault.</p>
+<h3 id="actually-read-the-code-seriously">Actually Read the Code (Seriously)</h3>
+<p>This one&rsquo;s important. Yes, Claude can crank out some impressive code, but just blindly accepting what it creates is a recipe for disaster. I always review what it generates, and I&rsquo;m not shy about asking for explanations when something looks unfamiliar. It&rsquo;s actually made me a better developer - I&rsquo;ve learned new patterns and approaches I wouldn&rsquo;t have discovered on my own.</p>
+<h3 id="write-requests-like-youre-explaining-to-a-junior-dev">Write Requests Like You&rsquo;re Explaining to a Junior Dev</h3>
+<p>This goes back to what I said about using specs and even having the agent work through a feature with TDD. The more opportunity you give it to check itself, the more opportunity you give it to fix errors before they become a problem.</p>
+<h2 id="where-it-really-shines">Where It Really Shines</h2>
+<p>After months of daily use, here&rsquo;s where Claude Code has become indispensable:</p>
+<ul>
+<li><strong>The Boring Stuff</strong>: Setup files, boilerplate, config - all the stuff that makes you want to quit programming and become a baker</li>
+<li><strong>Test Writing</strong>: I actually have decent test coverage now. Who would&rsquo;ve thought?</li>
+<li><strong>Documentation</strong>: No more &ldquo;I&rsquo;ll document it later&rdquo; (spoiler: later never comes)</li>
+<li><strong>Untangling Legacy Code</strong>: When you inherit that one file nobody wants to touch</li>
+<li><strong>Rubber Duck Debugging</strong>: Sometimes just explaining the problem to Claude helps me solve it myself</li>
+</ul>
+<h2 id="lets-be-real-though">Let&rsquo;s Be Real Though</h2>
+<p>Claude Code isn&rsquo;t magic. It can&rsquo;t replace actual thinking or make architectural decisions for you. I&rsquo;ve seen people try to use it as a crutch, and it doesn&rsquo;t end well. Think of it more like a really smart autocomplete that can also explain its suggestions.</p>
+<h2 id="final-thoughts">Final Thoughts</h2>
+<p>Claude Code has become as essential to my workflow as my morning coffee. But just like coffee, it&rsquo;s best used to enhance what you&rsquo;re already doing, not replace sleep entirely.</p>
+<p>Start small. Try it for writing tests or generating boilerplate. See how it fits into your workflow. Everyone&rsquo;s different, and what works for me might not work for you. But I&rsquo;d be surprised if you don&rsquo;t find at least a few use cases where it saves you time and sanity.</p>
+<p>The future of programming probably involves a lot more AI assistance, and tools like Claude Code feel like a glimpse of what&rsquo;s coming. May as well get comfortable with it now, right?</p>
+</section>
+</article>
+</main>
+       
+
+    </div>
+  </body>
+</html>

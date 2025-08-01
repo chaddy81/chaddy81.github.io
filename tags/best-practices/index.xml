@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Best Practices on Chad Bartels</title>
+    <link>http://localhost:1313/tags/best-practices/</link>
+    <description>Recent content in Best Practices on Chad Bartels</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 Aug 2025 10:00:00 -0400</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/best-practices/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Claude Code: Best Practices for AI-Powered Terminal Development</title>
+      <link>http://localhost:1313/posts/claude-code-best-practices/</link>
+      <pubDate>Fri, 01 Aug 2025 10:00:00 -0400</pubDate>
+      <guid>http://localhost:1313/posts/claude-code-best-practices/</guid>
+      <description>How to effectively use Claude Code for agentic coding and maximize your productivity with AI assistance in the terminal</description>
+    </item>
+  </channel>
+</rss>
