@@ -1,650 +1,388 @@
 <!doctype html>
 <html lang="en" class="h-full">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Field Notes — Software Developer / AI Engineer</title>
-    <meta
-      name="description"
-      content="Clean, modern blog by a Software Developer / AI Engineer. Field notes on AI systems, MLOps, and engineering craft."
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Plus+Jakarta+Sans:wght@300;400;500;700&family=IBM+Plex+Mono:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      :root {
-        --bg: #0b0f14;
-        --surface: #0f141b;
-        --grid: rgba(255, 255, 255, 0.05);
-        --fg: #e6e9ef;
-        --muted: #8b9bb4;
-        --accent: #64ffda;
-        --accent-2: #07a9ff;
-        --border: #1b2430;
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Field Notes — Software Developer / AI Engineer</title>
+  <meta name="description"
+    content="Clean, modern blog by a Software Developer / AI Engineer. Field notes on AI systems, MLOps, and engineering craft." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Plus+Jakarta+Sans:wght@300;400;500;700&family=IBM+Plex+Mono:wght@400;600&display=swap"
+    rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --surface: #0f141b;
+      --grid: rgba(255, 255, 255, 0.05);
+      --fg: #e6e9ef;
+      --muted: #8b9bb4;
+      --accent: #64ffda;
+      --accent-2: #07a9ff;
+      --border: #1b2430;
+    }
+
+    .font-display {
+      font-family: "Space Grotesk", ui-sans-serif, system-ui;
+    }
+
+    .font-body {
+      font-family: "Plus Jakarta Sans", ui-sans-serif, system-ui;
+    }
+
+    .font-tech {
+      font-family:
+        "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Monaco,
+        Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+
+    @keyframes scanX {
+      0% {
+        transform: translateX(-40%);
+        opacity: 0;
       }
 
-      .font-display {
-        font-family: "Space Grotesk", ui-sans-serif, system-ui;
-      }
-
-      .font-body {
-        font-family: "Plus Jakarta Sans", ui-sans-serif, system-ui;
-      }
-
-      .font-tech {
-        font-family:
-          "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Monaco,
-          Consolas, "Liberation Mono", "Courier New", monospace;
-      }
-
-      @keyframes scanX {
-        0% {
-          transform: translateX(-40%);
-          opacity: 0;
-        }
-
-        10% {
-          opacity: 1;
-        }
-
-        60% {
-          opacity: 1;
-        }
-
-        100% {
-          transform: translateX(130%);
-          opacity: 0;
-        }
-      }
-
-      @keyframes floatCyan {
-        0% {
-          transform: translateY(0);
-        }
-
-        50% {
-          transform: translateY(-4px);
-        }
-
-        100% {
-          transform: translateY(0);
-        }
-      }
-
-      .reveal {
+      10% {
         opacity: 1;
-        transform: translateY(0) scale(1);
       }
-    </style>
-  </head>
 
-  <body
-    class="h-full bg-[var(--bg)] text-[var(--fg)] selection:bg-[var(--accent)]/20 selection:text-[var(--fg)]"
-  >
-    <!-- Background layers -->
-    <div class="fixed inset-0 -z-10">
-      <!-- Soft radial ambience -->
-      <div
-        class="absolute inset-0 bg-[radial-gradient(1200px_700px_at_120%_-20%,rgba(100,255,218,0.12),transparent)]"
-      ></div>
-      <div
-        class="absolute inset-0 bg-[radial-gradient(800px_500px_at_-20%_20%,rgba(7,169,255,0.12),transparent)]"
-      ></div>
-      <!-- Subtle grid -->
-      <div
-        class="absolute inset-0 opacity-[0.18] mix-blend-screen bg-[length:36px_36px] bg-[linear-gradient(var(--grid)_1px,transparent_1px),linear-gradient(90deg,var(--grid)_1px,transparent_1px)]"
-      ></div>
-      <!-- Tiny noise texture -->
-      <div
-        class="absolute inset-0 opacity-[0.08] pointer-events-none bg-[url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2240%22 height=%2240%22 viewBox=%220 0 40 40%22><filter id=%22n%22><feTurbulence type=%22fractalNoise%22 baseFrequency=%220.8%22 numOctaves=%222%22 stitchTiles=%22stitch%22/></filter><rect width=%2240%22 height=%2240%22 filter=%22url(%23n)%22 opacity=%220.25%22/></svg>')]"
-      ></div>
+      60% {
+        opacity: 1;
+      }
+
+      100% {
+        transform: translateX(130%);
+        opacity: 0;
+      }
+    }
+
+    @keyframes floatCyan {
+      0% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-4px);
+      }
+
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    .reveal {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  </style>
+</head>
+
+<body class="h-full bg-[var(--bg)] text-[var(--fg)] selection:bg-[var(--accent)]/20 selection:text-[var(--fg)]">
+  <!-- Background layers -->
+  <div class="fixed inset-0 -z-10">
+    <!-- Soft radial ambience -->
+    <div class="absolute inset-0 bg-[radial-gradient(1200px_700px_at_120%_-20%,rgba(100,255,218,0.12),transparent)]">
     </div>
+    <div class="absolute inset-0 bg-[radial-gradient(800px_500px_at_-20%_20%,rgba(7,169,255,0.12),transparent)]"></div>
+    <!-- Subtle grid -->
+    <div
+      class="absolute inset-0 opacity-[0.18] mix-blend-screen bg-[length:36px_36px] bg-[linear-gradient(var(--grid)_1px,transparent_1px),linear-gradient(90deg,var(--grid)_1px,transparent_1px)]">
+    </div>
+    <!-- Tiny noise texture -->
+    <div
+      class="absolute inset-0 opacity-[0.08] pointer-events-none bg-[url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2240%22 height=%2240%22 viewBox=%220 0 40 40%22><filter id=%22n%22><feTurbulence type=%22fractalNoise%22 baseFrequency=%220.8%22 numOctaves=%222%22 stitchTiles=%22stitch%22/></filter><rect width=%2240%22 height=%2240%22 filter=%22url(%23n)%22 opacity=%220.25%22/></svg>')]">
+    </div>
+  </div>
 
-    <!-- Top nav -->
-    <header class="relative">
-      <div
-        class="mx-auto max-w-[1200px] px-6 py-6 md:py-7 flex items-center justify-between border-b border-[var(--border)]/70 backdrop-blur-sm bg-[var(--bg)]/30"
-      >
-        <div class="flex items-center gap-3">
-          <!-- <span class="relative inline-flex h-5 w-5 items-center justify-center"> -->
-          <!--   <span class="absolute inset-0 rounded-sm bg-[var(--accent)]/25 blur-[6px]"></span> -->
-          <!--   <span class="h-5 w-5 rounded-[3px] bg-gradient-to-br from-[var(--accent)] to-[var(--accent-2)]"></span> -->
-          <!-- </span> -->
-          <div class="leading-tight">
-            <div class="font-display font-semibold tracking-tight text-lg">
-              CHAD BARTELS
-            </div>
-            <div
-              class="font-tech text-[11px] uppercase tracking-[0.2em] text-[var(--muted)]"
-            >
-              Software Dev / AI Engineer
-            </div>
+  <!-- Top nav -->
+  <header class="relative">
+    <div
+      class="mx-auto max-w-[1200px] px-6 py-6 md:py-7 flex items-center justify-between border-b border-[var(--border)]/70 backdrop-blur-sm bg-[var(--bg)]/30">
+      <div class="flex items-center gap-3">
+        <!-- <span class="relative inline-flex h-5 w-5 items-center justify-center"> -->
+        <!--   <span class="absolute inset-0 rounded-sm bg-[var(--accent)]/25 blur-[6px]"></span> -->
+        <!--   <span class="h-5 w-5 rounded-[3px] bg-gradient-to-br from-[var(--accent)] to-[var(--accent-2)]"></span> -->
+        <!-- </span> -->
+        <div class="leading-tight">
+          <div class="font-display font-semibold tracking-tight text-lg">
+            CHAD BARTELS
+          </div>
+          <div class="font-tech text-[11px] uppercase tracking-[0.2em] text-[var(--muted)]">
+            Software Dev / AI Engineer
           </div>
         </div>
-        <nav class="hidden md:flex items-center gap-7 font-body text-[15px]">
-          <a
-            class="text-[var(--fg)]/60 hover:text-[var(--fg)] transition-colors"
-            href="#"
-            >About</a
-          >
-        </nav>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <!-- Hero -->
-    <section class="relative overflow-hidden">
-      <div class="mx-auto max-w-[1200px] px-6 py-14 md:py-20">
-        <div class="relative">
-          <!-- sweeping scanline -->
+  <!-- Hero -->
+  <section class="relative overflow-hidden">
+    <div class="mx-auto max-w-[1200px] px-6 py-14 md:py-20">
+      <div class="relative">
+        <!-- sweeping scanline -->
+        <div class="pointer-events-none absolute -top-10 left-0 right-0 h-40 md:h-52 overflow-visible">
           <div
-            class="pointer-events-none absolute -top-10 left-0 right-0 h-40 md:h-52 overflow-visible"
-          >
-            <div
-              class="h-[2px] w-1/3 bg-gradient-to-r from-transparent via-[var(--accent)] to-transparent opacity-80 animate-[scanX_3.6s_ease-in-out_1.2s_infinite]"
-            ></div>
+            class="h-[2px] w-1/3 bg-gradient-to-r from-transparent via-[var(--accent)] to-transparent opacity-80 animate-[scanX_3.6s_ease-in-out_1.2s_infinite]">
           </div>
+        </div>
+      </div>
+  </section>
 
-          <div class="grid md:grid-cols-12 gap-10 items-end">
-            <div class="md:col-span-8">
-              <h1
-                class="font-display text-4xl md:text-6xl lg:text-7xl tracking-[-0.02em] leading-[1.05] reveal transition-all duration-700"
-                data-reveal
-                style="transition-delay: 80ms"
-              >
-                Engineering calm in complex systems.
-              </h1>
-              <p
-                class="mt-5 font-body text-[17px] md:text-lg text-[var(--muted)] max-w-2xl reveal transition-all duration-700"
-                data-reveal
-                style="transition-delay: 180ms"
-              >
-                Notes on AI, software design, and operating reliable ML
-                infrastructure. Clean patterns. Measurable outcomes. No fluff.
+  <!-- Posts Grid -->
+  <main class="relative">
+    <div class="mx-auto max-w-[1200px] px-6 pb-24 md:pb-32">
+      <div id="posts" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-7 md:gap-8">
+        <!-- Post 1 -->
+        <article
+          class="post-card group border border-[var(--border)] rounded-xl overflow-hidden bg-[var(--surface)]/50 hover:bg-[var(--surface)]/70 transition-all duration-300 hover:shadow-[0_0_60px_rgba(100,255,218,0.06)] cursor-pointer reveal"
+          data-reveal data-category="ai" style="transition-delay: 60ms">
+          <a href="#" class="block">
+            <div class="relative overflow-hidden">
+              <img class="h-52 w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1600&q=80"
+                alt="Neon network mesh" />
+              <div class="absolute inset-0 bg-gradient-to-t from-[var(--bg)]/50 via-transparent to-transparent"></div>
+            </div>
+            <div class="p-5">
+              <div class="flex items-center gap-3">
+                <span class="font-tech text-[11px] uppercase tracking-[0.2em] text-[var(--muted)]">AI</span>
+                <span class="h-[1px] w-6 bg-[var(--border)]"></span>
+                <span class="font-tech text-[11px] uppercase tracking-[0.2em] text-[var(--muted)]">Jun 2, 2025</span>
+              </div>
+              <h3 class="mt-2 font-display text-xl leading-snug group-hover:text-[var(--accent)] transition-colors">
+                Retrieval That Doesn’t Lie: Structuring Context for
+                Trustworthy LLMs
+              </h3>
+              <p class="mt-2 font-body text-[15px] text-[var(--muted)]">
+                A pragmatic framework to design RAG pipelines that fail
+                loudly, not silently.
               </p>
-
-              <div
-                class="mt-7 flex flex-wrap items-center gap-3 reveal transition-all duration-700"
-                data-reveal
-                style="transition-delay: 260ms"
-              >
+              <div class="mt-4 flex items-center justify-between">
                 <span
-                  class="font-tech text-[11px] uppercase tracking-[0.2em] text-[var(--muted)]"
-                  >Now Reading</span
-                >
-                <span class="h-[1px] w-8 bg-[var(--border)]"></span>
+                  class="px-2 py-1 rounded-md border border-[var(--accent)]/40 text-[var(--accent)] font-tech text-[11px]">RAG</span>
                 <span
-                  class="px-2.5 py-1 rounded-[5px] border border-[var(--border)]/80 bg-[var(--surface)]/60 font-tech text-[12px] text-[var(--fg)]"
-                  >AI Systems</span
-                >
-                <span
-                  class="px-2.5 py-1 rounded-[5px] border border-[var(--border)]/80 bg-[var(--surface)]/60 font-tech text-[12px] text-[var(--fg)]"
-                  >MLOps</span
-                >
-                <span
-                  class="px-2.5 py-1 rounded-[5px] border border-[var(--border)]/80 bg-[var(--surface)]/60 font-tech text-[12px] text-[var(--fg)]"
-                  >Performance</span
-                >
+                  class="font-tech text-[12px] text-[var(--fg)]/80 group-hover:text-[var(--accent)] transition-colors">Read
+                  →</span>
               </div>
             </div>
+          </a>
+        </article>
 
-            <div class="md:col-span-4">
-              <div
-                class="reveal transition-all duration-700"
-                data-reveal
-                style="transition-delay: 320ms"
-              >
-                <div
-                  class="relative rounded-xl overflow-hidden border border-[var(--border)] bg-[var(--surface)]/60"
-                >
-                  <img
-                    class="w-full h-56 object-cover opacity-90 hover:opacity-100 transition-opacity duration-500"
-                    src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80"
-                    alt="AI circuits and computation"
-                  />
-                  <div
-                    class="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-[var(--bg)] via-[var(--bg)]/80 to-transparent"
-                  >
-                    <div
-                      class="font-tech text-[11px] uppercase tracking-[0.2em] text-[var(--muted)]"
-                    >
-                      Latest
-                    </div>
-                    <div class="mt-1 font-display text-[18px] leading-tight">
-                      From Prototype to Platform: Shipping ML the Boring Way
-                    </div>
-                  </div>
-                </div>
+        <!-- Post 2 -->
+        <article
+          class="post-card group border border-[var(--border)] rounded-xl overflow-hidden bg-[var(--surface)]/50 hover:bg-[var(--surface)]/70 transition-all duration-300 hover:shadow-[0_0_60px_rgba(100,255,218,0.06)] cursor-pointer reveal"
+          data-reveal data-category="systems" style="transition-delay: 110ms">
+          <a href="#" class="block">
+            <div class="relative overflow-hidden">
+              <img class="h-52 w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80"
+                alt="Server rack and cables" />
+              <div class="absolute inset-0 bg-gradient-to-t from-[var(--bg)]/50 via-transparent to-transparent"></div>
+            </div>
+            <div class="p-5">
+              <div class="flex items-center gap-3">
+                <span class="font-tech text-[11px] uppercase tracking-[0.2em] text-[var(--muted)]">Systems</span>
+                <span class="h-[1px] w-6 bg-[var(--border)]"></span>
+                <span class="font-tech text-[11px] uppercase tracking-[0.2em] text-[var(--muted)]">May 26, 2025</span>
+              </div>
+              <h3 class="mt-2 font-display text-xl leading-snug group-hover:text-[var(--accent)] transition-colors">
+                Latency Budgets for Humans: Designing Snappy AI Features
+              </h3>
+              <p class="mt-2 font-body text-[15px] text-[var(--muted)]">
+                Budget every millisecond and ship AI UX that feels instant.
+              </p>
+              <div class="mt-4 flex items-center justify-between">
+                <span
+                  class="px-2 py-1 rounded-md border border-[var(--accent)]/40 text-[var(--accent)] font-tech text-[11px]">Performance</span>
+                <span
+                  class="font-tech text-[12px] text-[var(--fg)]/80 group-hover:text-[var(--accent)] transition-colors">Read
+                  →</span>
               </div>
             </div>
-          </div>
+          </a>
+        </article>
 
-          <!-- Filters -->
-          <div
-            class="mt-10 flex flex-wrap items-center gap-2 md:gap-3 reveal transition-all duration-700"
-            data-reveal
-            style="transition-delay: 380ms"
-          >
-            <button
-              class="filter-btn active px-3.5 py-2 rounded-md border border-[var(--accent)]/60 text-[var(--accent)] font-tech text-[12px] uppercase tracking-[0.18em] hover:bg-[var(--accent)]/10 transition-all"
-              data-filter="all"
-            >
-              All
-            </button>
-            <button
-              class="filter-btn px-3.5 py-2 rounded-md border border-[var(--border)]/80 text-[var(--fg)]/80 font-tech text-[12px] uppercase tracking-[0.18em] hover:border-[var(--accent)]/40 hover:text-[var(--fg)] transition-all"
-              data-filter="ai"
-            >
-              AI
-            </button>
-            <button
-              class="filter-btn px-3.5 py-2 rounded-md border border-[var(--border)]/80 text-[var(--fg)]/80 font-tech text-[12px] uppercase tracking-[0.18em] hover:border-[var(--accent)]/40 hover:text-[var(--fg)] transition-all"
-              data-filter="systems"
-            >
-              Systems
-            </button>
-            <button
-              class="filter-btn px-3.5 py-2 rounded-md border border-[var(--border)]/80 text-[var(--fg)]/80 font-tech text-[12px] uppercase tracking-[0.18em] hover:border-[var(--accent)]/40 hover:text-[var(--fg)] transition-all"
-              data-filter="mlops"
-            >
-              MLOps
-            </button>
-            <button
-              class="filter-btn px-3.5 py-2 rounded-md border border-[var(--border)]/80 text-[var(--fg)]/80 font-tech text-[12px] uppercase tracking-[0.18em] hover:border-[var(--accent)]/40 hover:text-[var(--fg)] transition-all"
-              data-filter="frontend"
-            >
-              Frontend
-            </button>
+        <!-- Post 3 -->
+        <article
+          class="post-card group border border-[var(--border)] rounded-xl overflow-hidden bg-[var(--surface)]/50 hover:bg-[var(--surface)]/70 transition-all duration-300 hover:shadow-[0_0_60px_rgba(100,255,218,0.06)] cursor-pointer reveal"
+          data-reveal data-category="mlops" style="transition-delay: 160ms">
+          <a href="#" class="block">
+            <div class="relative overflow-hidden">
+              <img class="h-52 w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1600&q=80"
+                alt="Precision instrument panel" />
+              <div class="absolute inset-0 bg-gradient-to-t from-[var(--bg)]/50 via-transparent to-transparent"></div>
+            </div>
+            <div class="p-5">
+              <div class="flex items-center gap-3">
+                <span class="font-tech text-[11px] uppercase tracking-[0.2em] text-[var(--muted)]">MLOps</span>
+                <span class="h-[1px] w-6 bg-[var(--border)]"></span>
+                <span class="font-tech text-[11px] uppercase tracking-[0.2em] text-[var(--muted)]">May 11, 2025</span>
+              </div>
+              <h3 class="mt-2 font-display text-xl leading-snug group-hover:text-[var(--accent)] transition-colors">
+                Versioning Embeddings Like You Mean It
+              </h3>
+              <p class="mt-2 font-body text-[15px] text-[var(--muted)]">
+                Bring discipline to vector stores with schema evolution and
+                lineage.
+              </p>
+              <div class="mt-4 flex items-center justify-between">
+                <span
+                  class="px-2 py-1 rounded-md border border-[var(--accent)]/40 text-[var(--accent)] font-tech text-[11px]">Data</span>
+                <span
+                  class="font-tech text-[12px] text-[var(--fg)]/80 group-hover:text-[var(--accent)] transition-colors">Read
+                  →</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- Post 4 -->
+        <article
+          class="post-card group border border-[var(--border)] rounded-xl overflow-hidden bg-[var(--surface)]/50 hover:bg-[var(--surface)]/70 transition-all duration-300 hover:shadow-[0_0_60px_rgba(100,255,218,0.06)] cursor-pointer reveal"
+          data-reveal data-category="frontend" style="transition-delay: 210ms">
+          <a href="#" class="block">
+            <div class="relative overflow-hidden">
+              <img class="h-52 w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&w=1600&q=80"
+                alt="Developer at workstation" />
+              <div class="absolute inset-0 bg-gradient-to-t from-[var(--bg)]/50 via-transparent to-transparent"></div>
+            </div>
+            <div class="p-5">
+              <div class="flex items-center gap-3">
+                <span class="font-tech text-[11px] uppercase tracking-[0.2em] text-[var(--muted)]">Frontend</span>
+                <span class="h-[1px] w-6 bg-[var(--border)]"></span>
+                <span class="font-tech text-[11px] uppercase tracking-[0.2em] text-[var(--muted)]">Apr 28, 2025</span>
+              </div>
+              <h3 class="mt-2 font-display text-xl leading-snug group-hover:text-[var(--accent)] transition-colors">
+                Designing Promptable Interfaces
+              </h3>
+              <p class="mt-2 font-body text-[15px] text-[var(--muted)]">
+                UI patterns that make model capabilities legible to humans.
+              </p>
+              <div class="mt-4 flex items-center justify-between">
+                <span
+                  class="px-2 py-1 rounded-md border border-[var(--accent)]/40 text-[var(--accent)] font-tech text-[11px]">UX</span>
+                <span
+                  class="font-tech text-[12px] text-[var(--fg)]/80 group-hover:text-[var(--accent)] transition-colors">Read
+                  →</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- Post 5 -->
+        <article
+          class="post-card group border border-[var(--border)] rounded-xl overflow-hidden bg-[var(--surface)]/50 hover:bg-[var(--surface)]/70 transition-all duration-300 hover:shadow-[0_0_60px_rgba(100,255,218,0.06)] cursor-pointer reveal"
+          data-reveal data-category="ai" style="transition-delay: 260ms">
+          <a href="#" class="block">
+            <div class="relative overflow-hidden">
+              <img class="h-52 w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                src="https://images.unsplash.com/photo-1555255707-c07966088b7b?auto=format&fit=crop&w=1600&q=80"
+                alt="Robotics arm" />
+              <div class="absolute inset-0 bg-gradient-to-t from-[var(--bg)]/50 via-transparent to-transparent"></div>
+            </div>
+            <div class="p-5">
+              <div class="flex items-center gap-3">
+                <span class="font-tech text-[11px] uppercase tracking-[0.2em] text-[var(--muted)]">AI</span>
+                <span class="h-[1px] w-6 bg-[var(--border)]"></span>
+                <span class="font-tech text-[11px] uppercase tracking-[0.2em] text-[var(--muted)]">Apr 15, 2025</span>
+              </div>
+              <h3 class="mt-2 font-display text-xl leading-snug group-hover:text-[var(--accent)] transition-colors">
+                Policy Gradients at the Product Edge
+              </h3>
+              <p class="mt-2 font-body text-[15px] text-[var(--muted)]">
+                Reinforcement learning signals wired into real user journeys.
+              </p>
+              <div class="mt-4 flex items-center justify-between">
+                <span
+                  class="px-2 py-1 rounded-md border border-[var(--accent)]/40 text-[var(--accent)] font-tech text-[11px]">RL</span>
+                <span
+                  class="font-tech text-[12px] text-[var(--fg)]/80 group-hover:text-[var(--accent)] transition-colors">Read
+                  →</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- Post 6 -->
+        <article
+          class="post-card group border border-[var(--border)] rounded-xl overflow-hidden bg-[var(--surface)]/50 hover:bg-[var(--surface)]/70 transition-all duration-300 hover:shadow-[0_0_60px_rgba(100,255,218,0.06)] cursor-pointer reveal"
+          data-reveal data-category="systems" style="transition-delay: 310ms">
+          <a href="#" class="block">
+            <div class="relative overflow-hidden">
+              <img class="h-52 w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                src="https://images.unsplash.com/photo-1517433456452-f9633a875f6f?auto=format&fit=crop&w=1600&q=80"
+                alt="Code on screen" />
+              <div class="absolute inset-0 bg-gradient-to-t from-[var(--bg)]/50 via-transparent to-transparent"></div>
+            </div>
+            <div class="p-5">
+              <div class="flex items-center gap-3">
+                <span class="font-tech text-[11px] uppercase tracking-[0.2em] text-[var(--muted)]">Systems</span>
+                <span class="h-[1px] w-6 bg-[var(--border)]"></span>
+                <span class="font-tech text-[11px] uppercase tracking-[0.2em] text-[var(--muted)]">Mar 30, 2025</span>
+              </div>
+              <h3 class="mt-2 font-display text-xl leading-snug group-hover:text-[var(--accent)] transition-colors">
+                Deterministic APIs for Probabilistic Models
+              </h3>
+              <p class="mt-2 font-body text-[15px] text-[var(--muted)]">
+                Contracts, timeouts, and idempotency when outputs aren’t.
+              </p>
+              <div class="mt-4 flex items-center justify-between">
+                <span
+                  class="px-2 py-1 rounded-md border border-[var(--accent)]/40 text-[var(--accent)] font-tech text-[11px]">Architecture</span>
+                <span
+                  class="font-tech text-[12px] text-[var(--fg)]/80 group-hover:text-[var(--accent)] transition-colors">Read
+                  →</span>
+              </div>
+            </div>
+          </a>
+        </article>
+      </div>
+
+      <!-- Pagination -->
+      <div class="mt-14 flex items-center justify-between border-t border-[var(--border)] pt-6">
+        <button
+          class="px-3 py-2 rounded-md border border-[var(--border)]/80 text-[var(--fg)]/80 font-tech text-[12px] uppercase tracking-[0.2em] hover:border-[var(--accent)]/40 hover:text-[var(--fg)] transition-all">
+          ← Newer
+        </button>
+        <button
+          class="px-3 py-2 rounded-md border border-[var(--border)]/80 text-[var(--fg)]/80 font-tech text-[12px] uppercase tracking-[0.2em] hover:border-[var(--accent)]/40 hover:text-[var(--fg)] transition-all">
+          Older →
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="relative border-t border-[var(--border)]/70">
+    <div class="mx-auto max-w-[1200px] px-6 py-10 md:py-14">
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+        <div>
+          <div class="font-display text-xl">
+            Let’s build something precise.
           </div>
+          <div class="mt-1 font-tech text-[12px] uppercase tracking-[0.2em] text-[var(--muted)]">
+            Available for advisory + collaborations
+          </div>
+        </div>
+        <div class="flex items-center gap-4 font-tech text-[12px]">
+          <a class="px-3 py-2 rounded-md border border-[var(--border)]/80 hover:border-[var(--accent)]/40 hover:text-[var(--accent)] transition-all"
+            href="#">Email</a>
+          <a class="px-3 py-2 rounded-md border border-[var(--border)]/80 hover:border-[var(--accent)]/40 hover:text-[var(--accent)] transition-all"
+            href="#">GitHub</a>
+          <a class="px-3 py-2 rounded-md border border-[var(--border)]/80 hover:border-[var(--accent)]/40 hover:text-[var(--accent)] transition-all"
+            href="#">LinkedIn</a>
+          <a class="px-3 py-2 rounded-md border border-[var(--border)]/80 hover:border-[var(--accent)]/40 hover:text-[var(--accent)] transition-all"
+            href="#">RSS</a>
         </div>
       </div>
-    </section>
-
-    <!-- Posts Grid -->
-    <main class="relative">
-      <div class="mx-auto max-w-[1200px] px-6 pb-24 md:pb-32">
-        <div
-          id="posts"
-          class="grid sm:grid-cols-2 lg:grid-cols-3 gap-7 md:gap-8"
-        >
-          <!-- Post 1 -->
-          <article
-            class="post-card group border border-[var(--border)] rounded-xl overflow-hidden bg-[var(--surface)]/50 hover:bg-[var(--surface)]/70 transition-all duration-300 hover:shadow-[0_0_60px_rgba(100,255,218,0.06)] cursor-pointer reveal"
-            data-reveal
-            data-category="ai"
-            style="transition-delay: 60ms"
-          >
-            <a href="#" class="block">
-              <div class="relative overflow-hidden">
-                <img
-                  class="h-52 w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
-                  src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1600&q=80"
-                  alt="Neon network mesh"
-                />
-                <div
-                  class="absolute inset-0 bg-gradient-to-t from-[var(--bg)]/50 via-transparent to-transparent"
-                ></div>
-              </div>
-              <div class="p-5">
-                <div class="flex items-center gap-3">
-                  <span
-                    class="font-tech text-[11px] uppercase tracking-[0.2em] text-[var(--muted)]"
-                    >AI</span
-                  >
-                  <span class="h-[1px] w-6 bg-[var(--border)]"></span>
-                  <span
-                    class="font-tech text-[11px] uppercase tracking-[0.2em] text-[var(--muted)]"
-                    >Jun 2, 2025</span
-                  >
-                </div>
-                <h3
-                  class="mt-2 font-display text-xl leading-snug group-hover:text-[var(--accent)] transition-colors"
-                >
-                  Retrieval That Doesn’t Lie: Structuring Context for
-                  Trustworthy LLMs
-                </h3>
-                <p class="mt-2 font-body text-[15px] text-[var(--muted)]">
-                  A pragmatic framework to design RAG pipelines that fail
-                  loudly, not silently.
-                </p>
-                <div class="mt-4 flex items-center justify-between">
-                  <span
-                    class="px-2 py-1 rounded-md border border-[var(--accent)]/40 text-[var(--accent)] font-tech text-[11px]"
-                    >RAG</span
-                  >
-                  <span
-                    class="font-tech text-[12px] text-[var(--fg)]/80 group-hover:text-[var(--accent)] transition-colors"
-                    >Read →</span
-                  >
-                </div>
-              </div>
-            </a>
-          </article>
-
-          <!-- Post 2 -->
-          <article
-            class="post-card group border border-[var(--border)] rounded-xl overflow-hidden bg-[var(--surface)]/50 hover:bg-[var(--surface)]/70 transition-all duration-300 hover:shadow-[0_0_60px_rgba(100,255,218,0.06)] cursor-pointer reveal"
-            data-reveal
-            data-category="systems"
-            style="transition-delay: 110ms"
-          >
-            <a href="#" class="block">
-              <div class="relative overflow-hidden">
-                <img
-                  class="h-52 w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
-                  src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80"
-                  alt="Server rack and cables"
-                />
-                <div
-                  class="absolute inset-0 bg-gradient-to-t from-[var(--bg)]/50 via-transparent to-transparent"
-                ></div>
-              </div>
-              <div class="p-5">
-                <div class="flex items-center gap-3">
-                  <span
-                    class="font-tech text-[11px] uppercase tracking-[0.2em] text-[var(--muted)]"
-                    >Systems</span
-                  >
-                  <span class="h-[1px] w-6 bg-[var(--border)]"></span>
-                  <span
-                    class="font-tech text-[11px] uppercase tracking-[0.2em] text-[var(--muted)]"
-                    >May 26, 2025</span
-                  >
-                </div>
-                <h3
-                  class="mt-2 font-display text-xl leading-snug group-hover:text-[var(--accent)] transition-colors"
-                >
-                  Latency Budgets for Humans: Designing Snappy AI Features
-                </h3>
-                <p class="mt-2 font-body text-[15px] text-[var(--muted)]">
-                  Budget every millisecond and ship AI UX that feels instant.
-                </p>
-                <div class="mt-4 flex items-center justify-between">
-                  <span
-                    class="px-2 py-1 rounded-md border border-[var(--accent)]/40 text-[var(--accent)] font-tech text-[11px]"
-                    >Performance</span
-                  >
-                  <span
-                    class="font-tech text-[12px] text-[var(--fg)]/80 group-hover:text-[var(--accent)] transition-colors"
-                    >Read →</span
-                  >
-                </div>
-              </div>
-            </a>
-          </article>
-
-          <!-- Post 3 -->
-          <article
-            class="post-card group border border-[var(--border)] rounded-xl overflow-hidden bg-[var(--surface)]/50 hover:bg-[var(--surface)]/70 transition-all duration-300 hover:shadow-[0_0_60px_rgba(100,255,218,0.06)] cursor-pointer reveal"
-            data-reveal
-            data-category="mlops"
-            style="transition-delay: 160ms"
-          >
-            <a href="#" class="block">
-              <div class="relative overflow-hidden">
-                <img
-                  class="h-52 w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
-                  src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1600&q=80"
-                  alt="Precision instrument panel"
-                />
-                <div
-                  class="absolute inset-0 bg-gradient-to-t from-[var(--bg)]/50 via-transparent to-transparent"
-                ></div>
-              </div>
-              <div class="p-5">
-                <div class="flex items-center gap-3">
-                  <span
-                    class="font-tech text-[11px] uppercase tracking-[0.2em] text-[var(--muted)]"
-                    >MLOps</span
-                  >
-                  <span class="h-[1px] w-6 bg-[var(--border)]"></span>
-                  <span
-                    class="font-tech text-[11px] uppercase tracking-[0.2em] text-[var(--muted)]"
-                    >May 11, 2025</span
-                  >
-                </div>
-                <h3
-                  class="mt-2 font-display text-xl leading-snug group-hover:text-[var(--accent)] transition-colors"
-                >
-                  Versioning Embeddings Like You Mean It
-                </h3>
-                <p class="mt-2 font-body text-[15px] text-[var(--muted)]">
-                  Bring discipline to vector stores with schema evolution and
-                  lineage.
-                </p>
-                <div class="mt-4 flex items-center justify-between">
-                  <span
-                    class="px-2 py-1 rounded-md border border-[var(--accent)]/40 text-[var(--accent)] font-tech text-[11px]"
-                    >Data</span
-                  >
-                  <span
-                    class="font-tech text-[12px] text-[var(--fg)]/80 group-hover:text-[var(--accent)] transition-colors"
-                    >Read →</span
-                  >
-                </div>
-              </div>
-            </a>
-          </article>
-
-          <!-- Post 4 -->
-          <article
-            class="post-card group border border-[var(--border)] rounded-xl overflow-hidden bg-[var(--surface)]/50 hover:bg-[var(--surface)]/70 transition-all duration-300 hover:shadow-[0_0_60px_rgba(100,255,218,0.06)] cursor-pointer reveal"
-            data-reveal
-            data-category="frontend"
-            style="transition-delay: 210ms"
-          >
-            <a href="#" class="block">
-              <div class="relative overflow-hidden">
-                <img
-                  class="h-52 w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
-                  src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&w=1600&q=80"
-                  alt="Developer at workstation"
-                />
-                <div
-                  class="absolute inset-0 bg-gradient-to-t from-[var(--bg)]/50 via-transparent to-transparent"
-                ></div>
-              </div>
-              <div class="p-5">
-                <div class="flex items-center gap-3">
-                  <span
-                    class="font-tech text-[11px] uppercase tracking-[0.2em] text-[var(--muted)]"
-                    >Frontend</span
-                  >
-                  <span class="h-[1px] w-6 bg-[var(--border)]"></span>
-                  <span
-                    class="font-tech text-[11px] uppercase tracking-[0.2em] text-[var(--muted)]"
-                    >Apr 28, 2025</span
-                  >
-                </div>
-                <h3
-                  class="mt-2 font-display text-xl leading-snug group-hover:text-[var(--accent)] transition-colors"
-                >
-                  Designing Promptable Interfaces
-                </h3>
-                <p class="mt-2 font-body text-[15px] text-[var(--muted)]">
-                  UI patterns that make model capabilities legible to humans.
-                </p>
-                <div class="mt-4 flex items-center justify-between">
-                  <span
-                    class="px-2 py-1 rounded-md border border-[var(--accent)]/40 text-[var(--accent)] font-tech text-[11px]"
-                    >UX</span
-                  >
-                  <span
-                    class="font-tech text-[12px] text-[var(--fg)]/80 group-hover:text-[var(--accent)] transition-colors"
-                    >Read →</span
-                  >
-                </div>
-              </div>
-            </a>
-          </article>
-
-          <!-- Post 5 -->
-          <article
-            class="post-card group border border-[var(--border)] rounded-xl overflow-hidden bg-[var(--surface)]/50 hover:bg-[var(--surface)]/70 transition-all duration-300 hover:shadow-[0_0_60px_rgba(100,255,218,0.06)] cursor-pointer reveal"
-            data-reveal
-            data-category="ai"
-            style="transition-delay: 260ms"
-          >
-            <a href="#" class="block">
-              <div class="relative overflow-hidden">
-                <img
-                  class="h-52 w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
-                  src="https://images.unsplash.com/photo-1555255707-c07966088b7b?auto=format&fit=crop&w=1600&q=80"
-                  alt="Robotics arm"
-                />
-                <div
-                  class="absolute inset-0 bg-gradient-to-t from-[var(--bg)]/50 via-transparent to-transparent"
-                ></div>
-              </div>
-              <div class="p-5">
-                <div class="flex items-center gap-3">
-                  <span
-                    class="font-tech text-[11px] uppercase tracking-[0.2em] text-[var(--muted)]"
-                    >AI</span
-                  >
-                  <span class="h-[1px] w-6 bg-[var(--border)]"></span>
-                  <span
-                    class="font-tech text-[11px] uppercase tracking-[0.2em] text-[var(--muted)]"
-                    >Apr 15, 2025</span
-                  >
-                </div>
-                <h3
-                  class="mt-2 font-display text-xl leading-snug group-hover:text-[var(--accent)] transition-colors"
-                >
-                  Policy Gradients at the Product Edge
-                </h3>
-                <p class="mt-2 font-body text-[15px] text-[var(--muted)]">
-                  Reinforcement learning signals wired into real user journeys.
-                </p>
-                <div class="mt-4 flex items-center justify-between">
-                  <span
-                    class="px-2 py-1 rounded-md border border-[var(--accent)]/40 text-[var(--accent)] font-tech text-[11px]"
-                    >RL</span
-                  >
-                  <span
-                    class="font-tech text-[12px] text-[var(--fg)]/80 group-hover:text-[var(--accent)] transition-colors"
-                    >Read →</span
-                  >
-                </div>
-              </div>
-            </a>
-          </article>
-
-          <!-- Post 6 -->
-          <article
-            class="post-card group border border-[var(--border)] rounded-xl overflow-hidden bg-[var(--surface)]/50 hover:bg-[var(--surface)]/70 transition-all duration-300 hover:shadow-[0_0_60px_rgba(100,255,218,0.06)] cursor-pointer reveal"
-            data-reveal
-            data-category="systems"
-            style="transition-delay: 310ms"
-          >
-            <a href="#" class="block">
-              <div class="relative overflow-hidden">
-                <img
-                  class="h-52 w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
-                  src="https://images.unsplash.com/photo-1517433456452-f9633a875f6f?auto=format&fit=crop&w=1600&q=80"
-                  alt="Code on screen"
-                />
-                <div
-                  class="absolute inset-0 bg-gradient-to-t from-[var(--bg)]/50 via-transparent to-transparent"
-                ></div>
-              </div>
-              <div class="p-5">
-                <div class="flex items-center gap-3">
-                  <span
-                    class="font-tech text-[11px] uppercase tracking-[0.2em] text-[var(--muted)]"
-                    >Systems</span
-                  >
-                  <span class="h-[1px] w-6 bg-[var(--border)]"></span>
-                  <span
-                    class="font-tech text-[11px] uppercase tracking-[0.2em] text-[var(--muted)]"
-                    >Mar 30, 2025</span
-                  >
-                </div>
-                <h3
-                  class="mt-2 font-display text-xl leading-snug group-hover:text-[var(--accent)] transition-colors"
-                >
-                  Deterministic APIs for Probabilistic Models
-                </h3>
-                <p class="mt-2 font-body text-[15px] text-[var(--muted)]">
-                  Contracts, timeouts, and idempotency when outputs aren’t.
-                </p>
-                <div class="mt-4 flex items-center justify-between">
-                  <span
-                    class="px-2 py-1 rounded-md border border-[var(--accent)]/40 text-[var(--accent)] font-tech text-[11px]"
-                    >Architecture</span
-                  >
-                  <span
-                    class="font-tech text-[12px] text-[var(--fg)]/80 group-hover:text-[var(--accent)] transition-colors"
-                    >Read →</span
-                  >
-                </div>
-              </div>
-            </a>
-          </article>
-        </div>
-
-        <!-- Pagination -->
-        <div
-          class="mt-14 flex items-center justify-between border-t border-[var(--border)] pt-6"
-        >
-          <button
-            class="px-3 py-2 rounded-md border border-[var(--border)]/80 text-[var(--fg)]/80 font-tech text-[12px] uppercase tracking-[0.2em] hover:border-[var(--accent)]/40 hover:text-[var(--fg)] transition-all"
-          >
-            ← Newer
-          </button>
-          <button
-            class="px-3 py-2 rounded-md border border-[var(--border)]/80 text-[var(--fg)]/80 font-tech text-[12px] uppercase tracking-[0.2em] hover:border-[var(--accent)]/40 hover:text-[var(--fg)] transition-all"
-          >
-            Older →
-          </button>
-        </div>
+      <div class="mt-6 font-body text-[13px] text-[var(--muted)]">
+        © 2025 — Field Notes. Built with care. No tracking.
       </div>
-    </main>
+    </div>
+  </footer>
+</body>
 
-    <!-- Footer -->
-    <footer class="relative border-t border-[var(--border)]/70">
-      <div class="mx-auto max-w-[1200px] px-6 py-10 md:py-14">
-        <div
-          class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6"
-        >
-          <div>
-            <div class="font-display text-xl">
-              Let’s build something precise.
-            </div>
-            <div
-              class="mt-1 font-tech text-[12px] uppercase tracking-[0.2em] text-[var(--muted)]"
-            >
-              Available for advisory + collaborations
-            </div>
-          </div>
-          <div class="flex items-center gap-4 font-tech text-[12px]">
-            <a
-              class="px-3 py-2 rounded-md border border-[var(--border)]/80 hover:border-[var(--accent)]/40 hover:text-[var(--accent)] transition-all"
-              href="#"
-              >Email</a
-            >
-            <a
-              class="px-3 py-2 rounded-md border border-[var(--border)]/80 hover:border-[var(--accent)]/40 hover:text-[var(--accent)] transition-all"
-              href="#"
-              >GitHub</a
-            >
-            <a
-              class="px-3 py-2 rounded-md border border-[var(--border)]/80 hover:border-[var(--accent)]/40 hover:text-[var(--accent)] transition-all"
-              href="#"
-              >LinkedIn</a
-            >
-            <a
-              class="px-3 py-2 rounded-md border border-[var(--border)]/80 hover:border-[var(--accent)]/40 hover:text-[var(--accent)] transition-all"
-              href="#"
-              >RSS</a
-            >
-          </div>
-        </div>
-        <div class="mt-6 font-body text-[13px] text-[var(--muted)]">
-          © 2025 — Field Notes. Built with care. No tracking.
-        </div>
-      </div>
-    </footer>
-  </body>
 </html>
