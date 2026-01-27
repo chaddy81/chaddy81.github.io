@@ -1,0 +1,28 @@
+---
+layout: base.njk
+title: Field Notes
+---
+<!-- Hero -->
+<section class="relative overflow-hidden">
+  <div class="mx-auto max-w-[1200px] px-6 py-14 md:py-20 md:pb-2">
+    <div class="relative">
+      <!-- sweeping scanline -->
+      <div class="pointer-events-none absolute -top-10 left-0 right-0 h-40 md:h-52 overflow-visible">
+        <div
+          class="h-[2px] w-1/3 bg-gradient-to-r from-transparent via-[var(--accent)] to-transparent opacity-80 animate-[scanX_3.6s_ease-in-out_1.2s_infinite]">
+        </div>
+      </div>
+    </div>
+</section>
+
+<!-- Posts Grid -->
+<main class="relative">
+  <div class="mx-auto max-w-[1200px] px-6 pb-24 md:pb-32">
+    <div id="posts" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-7 md:gap-8">
+      {% for post in collections.posts %}
+        {% set index = loop.index0 %}
+        {% include "post-card.njk" %}
+      {% endfor %}
+    </div>
+  </div>
+</main>

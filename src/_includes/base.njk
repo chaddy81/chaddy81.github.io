@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en" class="h-full">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ title or site.title }} — Software Developer / AI Engineer</title>
+  <meta name="description" content="{{ description or site.description }}" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Plus+Jakarta+Sans:wght@300;400;500;700&family=IBM+Plex+Mono:wght@400;600&display=swap"
+    rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --surface: #0f141b;
+      --grid: rgba(255, 255, 255, 0.05);
+      --fg: #e6e9ef;
+      --muted: #8b9bb4;
+      --accent: #64ffda;
+      --accent-2: #07a9ff;
+      --border: #1b2430;
+    }
+
+    .font-display {
+      font-family: "Space Grotesk", ui-sans-serif, system-ui;
+    }
+
+    .font-body {
+      font-family: "Plus Jakarta Sans", ui-sans-serif, system-ui;
+    }
+
+    .font-tech {
+      font-family:
+        "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Monaco,
+        Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+
+    @keyframes scanX {
+      0% {
+        transform: translateX(-40%);
+        opacity: 0;
+      }
+
+      10% {
+        opacity: 1;
+      }
+
+      60% {
+        opacity: 1;
+      }
+
+      100% {
+        transform: translateX(130%);
+        opacity: 0;
+      }
+    }
+
+    @keyframes floatCyan {
+      0% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-4px);
+      }
+
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    .reveal {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+
+    /* Prose styling for Markdown content */
+    .prose {
+      color: var(--fg);
+    }
+
+    .prose h1,
+    .prose h2,
+    .prose h3,
+    .prose h4 {
+      font-family: "Space Grotesk", ui-sans-serif, system-ui;
+      color: var(--fg);
+      margin-top: 2em;
+      margin-bottom: 0.5em;
+    }
+
+    .prose h1 {
+      font-size: 2.25rem;
+      font-weight: 700;
+    }
+
+    .prose h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    .prose h3 {
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+
+    .prose p {
+      margin-bottom: 1.25em;
+      line-height: 1.75;
+    }
+
+    .prose a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .prose a:hover {
+      color: var(--accent-2);
+    }
+
+    .prose ul,
+    .prose ol {
+      margin-bottom: 1.25em;
+      padding-left: 1.5em;
+    }
+
+    .prose li {
+      margin-bottom: 0.5em;
+    }
+
+    .prose ul li {
+      list-style-type: disc;
+    }
+
+    .prose ol li {
+      list-style-type: decimal;
+    }
+
+    .prose blockquote {
+      border-left: 3px solid var(--accent);
+      padding-left: 1em;
+      margin: 1.5em 0;
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    .prose code {
+      font-family: "IBM Plex Mono", ui-monospace, monospace;
+      background: var(--surface);
+      padding: 0.2em 0.4em;
+      border-radius: 4px;
+      font-size: 0.9em;
+    }
+
+    .prose pre {
+      background: var(--surface);
+      padding: 1em;
+      border-radius: 8px;
+      overflow-x: auto;
+      margin: 1.5em 0;
+    }
+
+    .prose pre code {
+      background: none;
+      padding: 0;
+    }
+
+    .prose img {
+      border-radius: 8px;
+      margin: 1.5em 0;
+    }
+
+    .prose hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 2em 0;
+    }
+  </style>
+</head>
+
+<body class="h-full bg-[var(--bg)] text-[var(--fg)] selection:bg-[var(--accent)]/20 selection:text-[var(--fg)]">
+  <!-- Background layers -->
+  <div class="fixed inset-0 -z-10">
+    <!-- Soft radial ambience -->
+    <div class="absolute inset-0 bg-[radial-gradient(1200px_700px_at_120%_-20%,rgba(100,255,218,0.12),transparent)]">
+    </div>
+    <div class="absolute inset-0 bg-[radial-gradient(800px_500px_at_-20%_20%,rgba(7,169,255,0.12),transparent)]"></div>
+    <!-- Subtle grid -->
+    <div
+      class="absolute inset-0 opacity-[0.18] mix-blend-screen bg-[length:36px_36px] bg-[linear-gradient(var(--grid)_1px,transparent_1px),linear-gradient(90deg,var(--grid)_1px,transparent_1px)]">
+    </div>
+    <!-- Tiny noise texture -->
+    <div
+      class="absolute inset-0 opacity-[0.08] pointer-events-none bg-[url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2240%22 height=%2240%22 viewBox=%220 0 40 40%22><filter id=%22n%22><feTurbulence type=%22fractalNoise%22 baseFrequency=%220.8%22 numOctaves=%222%22 stitchTiles=%22stitch%22/></filter><rect width=%2240%22 height=%2240%22 filter=%22url(%23n)%22 opacity=%220.25%22/></svg>')]">
+    </div>
+  </div>
+
+  <!-- Top nav -->
+  <header class="relative">
+    <div
+      class="mx-auto max-w-[1200px] py-6 md:py-7 md:pb-4 px-4 flex items-center justify-between border-b border-[var(--border)]/70 backdrop-blur-sm bg-[var(--bg)]/30">
+      <a href="/" class="flex items-center gap-3">
+        <div class="leading-tight">
+          <div class="font-display font-semibold tracking-tight text-lg hover:text-[var(--accent)] transition-colors">
+            CHAD BARTELS
+          </div>
+        </div>
+      </a>
+    </div>
+  </header>
+
+  {{ content | safe }}
+</body>
+
+</html>
