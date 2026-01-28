@@ -1,28 +1,46 @@
 <article
-  class="post-card group border border-[var(--border)] rounded-xl overflow-hidden bg-[var(--surface)]/50 hover:bg-[var(--surface)]/70 transition-all duration-300 hover:shadow-[0_0_60px_rgba(100,255,218,0.06)] cursor-pointer reveal"
+  class="post-card group relative border border-[var(--border)] rounded-xl overflow-hidden bg-[var(--surface)]/50 hover:bg-[var(--surface)]/80 transition-all duration-300 hover:shadow-[0_0_60px_rgba(100,255,218,0.08)] hover:border-[var(--accent)]/20 reveal"
   data-reveal data-category="{{ post.data.category }}" style="transition-delay: {{ index | staggerDelay }}ms">
+
+  <!-- Post number watermark -->
+  <div class="absolute top-4 right-4 font-display text-6xl font-extrabold text-[var(--fg)]/[0.03] select-none pointer-events-none">
+    {{ (index + 1) | padStart(2) }}
+  </div>
+
   <a href="{{ post.url }}" class="block">
     <div class="relative overflow-hidden">
-      <img class="h-52 w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+      <img class="h-48 w-full object-cover transition-transform duration-500 group-hover:scale-[1.05]"
         src="{{ post.data.image }}"
-        alt="{{ post.data.imageAlt }}" />
-      <div class="absolute inset-0 bg-gradient-to-t from-[var(--bg)]/50 via-transparent to-transparent"></div>
-    </div>
-    <div class="p-5">
-      <div class="flex items-center gap-3">
-        <span class="h-[1px] w-6 bg-[var(--border)]"></span>
+        alt="{{ post.data.imageAlt }}" loading="lazy" />
+      <div class="absolute inset-0 bg-gradient-to-t from-[var(--surface)] via-transparent to-transparent"></div>
+
+      <!-- Category badge -->
+      <div class="absolute top-3 left-3">
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-1 bg-[var(--bg)]/80 backdrop-blur-sm border border-[var(--border)] rounded-full">
+          <span class="w-1.5 h-1.5 rounded-full bg-[var(--accent)]"></span>
+          <span class="font-tech text-[10px] uppercase tracking-wider text-[var(--fg)]/80">{{ post.data.category }}</span>
+        </span>
       </div>
-      <h3 class="mt-2 font-display text-xl leading-snug group-hover:text-[var(--accent)] transition-colors">
+    </div>
+
+    <div class="p-5">
+      <span class="font-tech text-[11px] uppercase tracking-[0.15em] text-[var(--muted)]">{{ post.data.date | postDate }}</span>
+
+      <h3 class="mt-2 font-display text-xl font-bold leading-snug group-hover:text-[var(--accent)] transition-colors">
         {{ post.data.title }}
       </h3>
-      <span class="font-tech text-[11px] uppercase tracking-[0.2em] text-[var(--muted)] mb-1">{{ post.data.date | postDate }}</span>
-      <p class="mt-2 font-body text-[15px] text-[var(--muted)]">
+
+      <p class="mt-3 font-body text-[15px] text-[var(--muted)] line-clamp-2">
         {{ post.data.description }}
       </p>
-      <div class="mt-4 flex items-center justify-between">
-        <span
-          class="font-tech text-[12px] text-[var(--fg)]/80 group-hover:text-[var(--accent)] transition-colors">Read
-          →</span>
+
+      <div class="mt-5 flex items-center justify-between">
+        <span class="inline-flex items-center gap-2 font-tech text-[12px] text-[var(--fg)]/70 group-hover:text-[var(--accent)] transition-colors">
+          Read article
+          <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+          </svg>
+        </span>
       </div>
     </div>
   </a>

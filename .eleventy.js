@@ -7,6 +7,16 @@ module.exports = function (eleventyConfig) {
     return 60 + index * 50;
   });
 
+  // Filter: Pad string with leading characters
+  eleventyConfig.addFilter("padStart", function (value, length, char = "0") {
+    return String(value).padStart(length, char);
+  });
+
+  // Filter: Get current year
+  eleventyConfig.addFilter("year", function () {
+    return new Date().getFullYear();
+  });
+
   // Filter: Format date for display
   eleventyConfig.addFilter("postDate", function (dateObj) {
     const months = [
